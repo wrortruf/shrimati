@@ -2746,7 +2746,7 @@
         ----------------------------------------------------- */
 
         const birthdayTime =
-            new Date("2026-10-07T00:00:00+05:30").getTime();
+            new Date("2026-11-07T00:00:00+05:30").getTime();
 
 
         let countdownInterval = null;
