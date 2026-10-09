@@ -1,0 +1,7933 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    >
+
+    <meta
+        name="theme-color"
+        content="#f6eee8"
+    >
+
+    <meta
+        name="description"
+        content="A little birthday experience made especially for the person I want beside me."
+    >
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%99%A1%3C/text%3E%3C/svg%3E">
+    <title>For My Abhilipsa — 07.11.2026 ♡</title>
+
+
+    <!-- =====================================================
+         FONTS
+    ====================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+
+<style id="birthday-index-enhancements">
+    :root {
+        --ink: #352a29;
+        --muted-ink: #765f5b;
+        --rose: #9b6670;
+        --rose-soft: #ead7d5;
+        --paper: rgba(255, 251, 247, .82);
+        --line: rgba(126, 86, 82, .16);
+    }
+
+    .micro-kicker {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        margin: 20px 0 0;
+        padding: 7px 11px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: rgba(255,255,255,.38);
+        color: var(--rose);
+        font: 600 9px/1 "DM Sans", sans-serif;
+        letter-spacing: .16em;
+        text-transform: uppercase;
+    }
+
+    .micro-kicker::before {
+        content: "✦";
+        font-size: 10px;
+    }
+
+    .story-subgrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        margin-top: 26px;
+    }
+
+    .story-stat {
+        padding: 18px 17px;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: rgba(255,255,255,.38);
+        box-shadow: 0 12px 35px rgba(74,45,40,.05);
+    }
+
+    .story-stat strong {
+        display: block;
+        color: var(--ink);
+        font: 600 25px/1 "Cormorant Garamond", serif;
+    }
+
+    .story-stat span {
+        display: block;
+        margin-top: 7px;
+        color: var(--muted-ink);
+        font: 500 9px/1.5 "DM Sans", sans-serif;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+    }
+
+    .chapter-note {
+        position: relative;
+        margin: 28px auto 0;
+        max-width: 720px;
+        padding: 18px 22px 18px 48px;
+        border-left: 2px solid rgba(155,102,112,.5);
+        background: rgba(255,255,255,.25);
+        color: var(--muted-ink);
+        font: 500 17px/1.55 "Caveat", cursive;
+    }
+
+    .chapter-note::before {
+        content: "“";
+        position: absolute;
+        left: 17px;
+        top: 7px;
+        color: var(--rose);
+        font: 400 38px/1 "Cormorant Garamond", serif;
+    }
+
+    .memory-note {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        margin: 25px auto 0;
+        padding: 15px 18px;
+        max-width: 850px;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        background: rgba(255,255,255,.34);
+    }
+
+    .memory-note span {
+        color: var(--muted-ink);
+        font: 500 11px/1.5 "DM Sans", sans-serif;
+    }
+
+    .memory-note b {
+        color: var(--rose);
+        font: 500 18px "Caveat", cursive;
+        white-space: nowrap;
+    }
+
+    .partner-contract {
+        margin-top: 30px;
+        padding: 23px;
+        border: 1px solid rgba(126,86,82,.15);
+        border-radius: 22px;
+        background: linear-gradient(135deg, rgba(255,255,255,.48), rgba(238,218,214,.36));
+    }
+
+    .partner-contract .contract-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 14px;
+        color: var(--rose);
+        font: 600 8px "DM Sans", sans-serif;
+        letter-spacing: .17em;
+        text-transform: uppercase;
+    }
+
+    .partner-contract h3 {
+        margin: 0 0 9px;
+        color: var(--ink);
+        font: 600 31px/1 "Cormorant Garamond", serif;
+    }
+
+    .partner-contract p {
+        margin: 0;
+        color: var(--muted-ink);
+        font: 400 13px/1.7 "DM Sans", sans-serif;
+    }
+
+    .contract-sign {
+        margin-top: 13px;
+        color: var(--rose);
+        font: 600 22px "Caveat", cursive;
+    }
+
+    .open-when-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        margin-top: 28px;
+    }
+
+    .open-when-card {
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 17px;
+        background: rgba(255,255,255,.38);
+    }
+
+    .open-when-card summary {
+        cursor: pointer;
+        list-style: none;
+        padding: 16px 17px;
+        color: var(--ink);
+        font: 600 16px "Cormorant Garamond", serif;
+    }
+
+    .open-when-card summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .open-when-card summary::after {
+        content: "+";
+        float: right;
+        color: var(--rose);
+        font: 400 20px/1 "DM Sans", sans-serif;
+    }
+
+    .open-when-card[open] summary::after {
+        content: "−";
+    }
+
+    .open-when-card p {
+        margin: 0;
+        padding: 0 17px 17px;
+        color: var(--muted-ink);
+        font: 400 12px/1.7 "DM Sans", sans-serif;
+    }
+
+    .wish-footer-note {
+        margin-top: 25px;
+        color: var(--muted-ink);
+        font: 500 19px "Caveat", cursive;
+    }
+
+    .final-stamp {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 72px;
+        height: 72px;
+        margin: 22px auto 0;
+        border: 1px solid rgba(155,102,112,.42);
+        border-radius: 50%;
+        color: var(--rose);
+        font: 600 9px/1.25 "DM Sans", sans-serif;
+        letter-spacing: .12em;
+        text-align: center;
+        text-transform: uppercase;
+        transform: rotate(-8deg);
+    }
+
+    .goodbye-postscript {
+        margin: 25px auto 0;
+        max-width: 420px;
+        color: var(--muted-ink);
+        font: 500 17px/1.45 "Caveat", cursive;
+    }
+
+    @media (max-width: 700px) {
+        .story-subgrid,
+        .open-when-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .story-stat {
+            padding: 15px;
+        }
+
+        .chapter-note {
+            font-size: 16px;
+        }
+
+        .memory-note {
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        .partner-contract h3 {
+            font-size: 27px;
+        }
+    }
+</style>
+
+</head>
+
+
+<body>
+<noscript>
+    <div style="position:fixed;inset:0;z-index:99999;display:grid;place-items:center;padding:30px;background:#f6eee8;color:#352a29;font-family:Arial,sans-serif;text-align:center">
+        <div>
+            <h2>This little birthday story needs JavaScript ♡</h2>
+            <p>Please enable JavaScript and open the page again.</p>
+        </div>
+    </div>
+</noscript>
+
+
+<!-- =========================================================
+     GLOBAL AMBIENCE
+========================================================= -->
+
+<div
+    class="ambient-background"
+    aria-hidden="true"
+>
+
+    <div class="ambient-glow glow-a"></div>
+
+    <div class="ambient-glow glow-b"></div>
+
+    <div class="ambient-glow glow-c"></div>
+
+    <div class="paper-noise"></div>
+
+</div>
+
+
+<!-- =========================================================
+     FLOATING DECORATIONS
+========================================================= -->
+
+<div
+    id="floatingDecor"
+    class="floating-decor"
+    aria-hidden="true"
+></div>
+
+
+<!-- =========================================================
+     MUSIC
+========================================================= -->
+
+<audio
+    id="backgroundMusic"
+    loop
+    preload="auto"
+>
+
+    <source
+        src="assets/music/birthday.mp3"
+        type="audio/mpeg"
+    >
+
+</audio>
+
+
+<button
+    id="musicToggle"
+    class="music-button"
+    aria-label="Toggle music"
+>
+
+    ♪
+
+</button>
+
+
+<!-- =========================================================
+     TOAST
+========================================================= -->
+
+<div
+    id="toast"
+    class="toast"
+    aria-live="polite"
+>
+
+    <span id="toastIcon">♡</span>
+
+    <span id="toastText">
+        A little surprise for you...
+    </span>
+
+</div>
+
+
+<!-- =========================================================
+     PAGE TRANSITION
+========================================================= -->
+
+<div
+    id="transitionOverlay"
+    class="transition-overlay"
+    aria-hidden="true"
+>
+
+    <div class="transition-symbol">
+        ♡
+    </div>
+
+</div>
+
+
+
+<!-- =========================================================
+     01 — CINEMATIC LOADER
+========================================================= -->
+
+<!-- =========================================================
+     PREMIUM BIRTHDAY LOADER
+     ABHILIPSA — 07.11.2026
+========================================================= -->
+
+<section
+    id="loader"
+    class="loader-screen loader-premium"
+>
+
+    <!-- =====================================================
+         BACKGROUND ATMOSPHERE
+    ====================================================== -->
+
+    <div
+        class="loader-background"
+        aria-hidden="true"
+    >
+
+        <div class="loader-noise"></div>
+
+        <div class="loader-gradient-orb orb-one"></div>
+        <div class="loader-gradient-orb orb-two"></div>
+        <div class="loader-gradient-orb orb-three"></div>
+
+        <div class="loader-glow-ring ring-one"></div>
+        <div class="loader-glow-ring ring-two"></div>
+
+        <div class="loader-stars">
+
+            <span>✦</span>
+            <span>·</span>
+            <span>✧</span>
+            <span>·</span>
+            <span>♡</span>
+            <span>✦</span>
+            <span>·</span>
+            <span>✧</span>
+            <span>·</span>
+            <span>✦</span>
+            <span>♡</span>
+            <span>·</span>
+            <span>✧</span>
+            <span>✦</span>
+
+        </div>
+
+        <div class="loader-floating-word word-one">
+            memories
+        </div>
+
+        <div class="loader-floating-word word-two">
+            moments
+        </div>
+
+        <div class="loader-floating-word word-three">
+            wishes
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         CORNER DECORATIONS
+    ====================================================== -->
+
+    <div
+        class="loader-corner-decoration corner-top-left"
+        aria-hidden="true"
+    >
+        <span>✦</span>
+        <span>♡</span>
+        <span>✧</span>
+    </div>
+
+
+    <div
+        class="loader-corner-decoration corner-top-right"
+        aria-hidden="true"
+    >
+        <span>✧</span>
+        <span>♡</span>
+        <span>✦</span>
+    </div>
+
+
+    <div
+        class="loader-corner-decoration corner-bottom-left"
+        aria-hidden="true"
+    >
+        <span>♡</span>
+        <span>·</span>
+        <span>✦</span>
+    </div>
+
+
+    <div
+        class="loader-corner-decoration corner-bottom-right"
+        aria-hidden="true"
+    >
+        <span>✦</span>
+        <span>·</span>
+        <span>♡</span>
+    </div>
+
+
+    <!-- =====================================================
+         TOP MINI HEADER
+    ====================================================== -->
+
+    <div class="loader-mini-header">
+
+        <div class="loader-mini-brand">
+
+            <span class="brand-dot"></span>
+
+            <span>
+                A PERSONAL BIRTHDAY STORY
+            </span>
+
+        </div>
+
+
+        <div class="loader-mini-date">
+            07 · 11 · 2026
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         MAIN LOADER CARD
+    ====================================================== -->
+
+    <div class="loader-card">
+
+
+        <!-- Top label -->
+
+        <div class="loader-topline">
+
+            <span class="line"></span>
+
+            <small>
+                A LITTLE SOMETHING
+            </small>
+
+            <span class="line"></span>
+
+        </div>
+
+
+        <!-- =================================================
+             BIG HEART
+        ================================================== -->
+
+        <div class="loader-heart">
+
+            <div class="heart-orbit orbit-one"></div>
+
+            <div class="heart-orbit orbit-two"></div>
+
+            <div class="heart-ripple ripple-one"></div>
+
+            <div class="heart-ripple ripple-two"></div>
+
+            <div class="heart-symbol">
+                ♡
+            </div>
+
+            <div class="heart-spark spark-one">
+                ✦
+            </div>
+
+            <div class="heart-spark spark-two">
+                ✧
+            </div>
+
+            <div class="heart-spark spark-three">
+                ·
+            </div>
+
+            <div class="heart-spark spark-four">
+                ♡
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             EYEBROW
+        ================================================== -->
+
+        <p class="loader-eyebrow">
+            MADE WITH TOO MUCH LOVE
+        </p>
+
+
+        <!-- =================================================
+             TITLE
+        ================================================== -->
+
+        <div class="loader-title-wrap">
+
+            <span class="loader-title-small">
+                this little world is
+            </span>
+
+            <h1 class="loader-title">
+
+                For
+
+                <span>
+                    Abhilipsa
+                </span>
+
+            </h1>
+
+        </div>
+
+
+        <!-- =================================================
+             SCRIPT MESSAGE
+        ================================================== -->
+
+        <div class="loader-script">
+
+            <span class="script-decoration">
+                ✦
+            </span>
+
+            <p>
+                because some people deserve
+                more than a simple
+                <em>“Happy Birthday”</em>
+            </p>
+
+            <span class="script-decoration">
+                ✦
+            </span>
+
+        </div>
+
+
+        <!-- =================================================
+             DIVIDER
+        ================================================== -->
+
+        <div class="loader-divider">
+
+            <span></span>
+
+            <b>
+                ✦
+            </b>
+
+            <span></span>
+
+        </div>
+
+
+        <!-- =================================================
+             PERSONAL MESSAGE
+        ================================================== -->
+
+        <div class="loader-personal-note">
+
+            <div class="personal-note-icon">
+                ♡
+            </div>
+
+            <div class="personal-note-content">
+
+                <span>
+                    A NOTE BEFORE WE BEGIN
+                </span>
+
+                <p>
+                    Take a breath.
+                    Put everything else aside
+                    for a little while.
+                </p>
+
+                <small>
+                    This one is just for you.
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             STATUS
+        ================================================== -->
+
+        <div class="loader-status-area">
+
+            <div
+                class="loader-status-icon"
+                id="loaderStatusIcon"
+            >
+                ✿
+            </div>
+
+
+            <div class="loader-status-content">
+
+                <p
+                    id="loaderText"
+                    class="loader-status"
+                >
+                    Preparing something special...
+                </p>
+
+                <span class="loader-status-subtext">
+                    please wait for the little magic
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             PROGRESS
+        ================================================== -->
+
+        <div class="loader-progress-wrap">
+
+
+            <div class="loader-progress-header">
+
+                <span>
+                    Creating your little story
+                </span>
+
+                <strong id="loaderPercentage">
+                    0%
+                </strong>
+
+            </div>
+
+
+            <div class="loader-progress-track">
+
+                <div
+                    id="loaderProgress"
+                    class="loader-progress"
+                >
+
+                    <div class="progress-glow"></div>
+
+                    <div class="progress-shimmer"></div>
+
+                </div>
+
+            </div>
+
+
+            <div class="loader-progress-footer">
+
+                <span id="loaderProgressText">
+                    Gathering memories...
+                </span>
+
+                <span class="progress-heart">
+                    ♡
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             LITTLE CHECKLIST
+        ================================================== -->
+
+        <div class="loader-checklist">
+
+            <div class="loader-check">
+
+                <span class="check-icon">
+                    ✓
+                </span>
+
+                <span>
+                    memories
+                </span>
+
+            </div>
+
+
+            <div class="check-separator">
+                ·
+            </div>
+
+
+            <div class="loader-check">
+
+                <span class="check-icon">
+                    ✓
+                </span>
+
+                <span>
+                    wishes
+                </span>
+
+            </div>
+
+
+            <div class="check-separator">
+                ·
+            </div>
+
+
+            <div class="loader-check">
+
+                <span class="check-icon">
+                    ✓
+                </span>
+
+                <span>
+                    little surprises
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             QUOTE
+        ================================================== -->
+
+        <div class="loader-quote">
+
+            <span class="quote-mark">
+                “
+            </span>
+
+            <div class="loader-quote-content">
+
+                <p id="loaderQuote">
+                    Some people make ordinary days
+                    feel a little more special.
+                </p>
+
+                <span class="quote-author">
+                    — a little thought for you
+                </span>
+
+            </div>
+
+            <span class="quote-end">
+                ”
+            </span>
+
+        </div>
+
+
+        <!-- =================================================
+             BIRTHDAY INFO
+        ================================================== -->
+
+        <div class="loader-birthday-info">
+
+            <div class="birthday-info-item">
+
+                <span class="info-number">
+                    07
+                </span>
+
+                <span class="info-label">
+                    DAY
+                </span>
+
+            </div>
+
+
+            <div class="birthday-info-divider">
+                •
+            </div>
+
+
+            <div class="birthday-info-item">
+
+                <span class="info-number">
+                    11
+                </span>
+
+                <span class="info-label">
+                    MONTH
+                </span>
+
+            </div>
+
+
+            <div class="birthday-info-divider">
+                •
+            </div>
+
+
+            <div class="birthday-info-item">
+
+                <span class="info-number">
+                    2008
+                </span>
+
+                <span class="info-label">
+                    BORN
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             BOTTOM MESSAGE
+        ================================================== -->
+
+        <div class="loader-bottom-message">
+
+            <span class="bottom-line"></span>
+
+            <p>
+                another year of
+                <strong>you</strong>
+            </p>
+
+            <span class="bottom-line"></span>
+
+        </div>
+
+
+        <!-- =================================================
+             CARD FOOTER
+        ================================================== -->
+
+        <div class="loader-card-footer">
+
+            <span>
+                MADE FOR ONE PERSON
+            </span>
+
+            <span class="footer-heart">
+                ♡
+            </span>
+
+            <span>
+                WITH A LOT OF FEELINGS
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         SIDE MESSAGE
+    ====================================================== -->
+
+    <div class="loader-side-note side-note-left">
+
+        <span class="side-line"></span>
+
+        <p>
+            a story
+            <br>
+            made slowly
+        </p>
+
+    </div>
+
+
+    <div class="loader-side-note side-note-right">
+
+        <p>
+            little moments
+            <br>
+            big feelings
+        </p>
+
+        <span class="side-line"></span>
+
+    </div>
+
+
+    <!-- =====================================================
+         BOTTOM DATE
+    ====================================================== -->
+
+    <div class="loader-bottom-date">
+
+        <span>
+            07
+        </span>
+
+        <i>
+            ·
+        </i>
+
+        <span>
+            11
+        </span>
+
+        <i>
+            ·
+        </i>
+
+        <span>
+            2026
+        </span>
+
+        <small>
+            HER DAY
+        </small>
+
+    </div>
+
+
+    <!-- =====================================================
+         COMPLETION SCREEN
+         IMPORTANT:
+         Existing JS ID preserved
+    ====================================================== -->
+
+    <div
+        id="loaderComplete"
+        class="loader-complete"
+    >
+
+        <div class="complete-background">
+
+            <span>✦</span>
+            <span>♡</span>
+            <span>✧</span>
+            <span>·</span>
+            <span>✦</span>
+            <span>♡</span>
+
+        </div>
+
+
+        <div class="complete-card">
+
+            <div class="complete-ring">
+
+                <div class="complete-symbol">
+                    ♡
+                </div>
+
+            </div>
+
+
+            <p class="complete-eyebrow">
+                EVERYTHING IS READY
+            </p>
+
+
+            <h2>
+                It's ready.
+            </h2>
+
+
+            <div class="complete-divider">
+
+                <span></span>
+
+                <b>
+                    ✦
+                </b>
+
+                <span></span>
+
+            </div>
+
+
+            <p class="complete-main">
+                Your little birthday story
+                is waiting for you.
+            </p>
+
+
+            <p class="complete-sub">
+                Memories, wishes,
+                little surprises
+                and a whole lot of love.
+            </p>
+
+
+            <div class="complete-date">
+                07 · 11 · 2026
+            </div>
+
+
+            <div class="complete-footer">
+
+                <span>
+                    TAKE YOUR TIME
+                </span>
+
+                <span>
+                    ♡
+                </span>
+
+                <span>
+                    ENJOY EVERY MOMENT
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     BIRTHDAY COUNTDOWN — FIXED PRE-EXPERIENCE SCREEN
+========================================================= -->
+
+<section id="countdownSection" class="countdown-section">
+
+    <!-- Background -->
+    <div class="countdown-bg"></div>
+
+    <div class="countdown-orb countdown-orb-1"></div>
+    <div class="countdown-orb countdown-orb-2"></div>
+
+    <!-- Floating hearts -->
+    <div class="countdown-floating-heart heart-1">♡</div>
+    <div class="countdown-floating-heart heart-2">♡</div>
+    <div class="countdown-floating-heart heart-3">♡</div>
+    <div class="countdown-floating-heart heart-4">♡</div>
+
+    <!-- Main content -->
+    <div class="countdown-content">
+
+        <div class="countdown-eyebrow">
+            <span></span>
+            BEFORE WE BEGIN
+            <span></span>
+        </div>
+
+        <h1 class="countdown-title">
+            Just a little<br>
+            <em>more waiting...</em>
+        </h1>
+
+        <p class="countdown-subtitle">
+            Some moments are too special<br>
+            to be rushed.
+        </p>
+
+
+        <!-- Birthday date -->
+        <div class="countdown-date">
+
+            <div class="countdown-date-day">
+                07
+            </div>
+
+            <div class="countdown-date-info">
+                <span>NOVEMBER</span>
+                <small>2026</small>
+            </div>
+
+        </div>
+
+
+        <!-- TIMER -->
+        <div class="countdown-timer" id="countdownTimer">
+
+            <!-- DAYS -->
+            <div class="countdown-unit">
+
+                <div
+                    class="countdown-number"
+                    id="countdownDays"
+                >
+                    00
+                </div>
+
+                <div class="countdown-label">
+                    DAYS
+                </div>
+
+            </div>
+
+
+            <div class="countdown-divider">
+                :
+            </div>
+
+
+            <!-- HOURS -->
+            <div class="countdown-unit">
+
+                <div
+                    class="countdown-number"
+                    id="countdownHours"
+                >
+                    00
+                </div>
+
+                <div class="countdown-label">
+                    HOURS
+                </div>
+
+            </div>
+
+
+            <div class="countdown-divider">
+                :
+            </div>
+
+
+            <!-- MINUTES -->
+            <div class="countdown-unit">
+
+                <div
+                    class="countdown-number"
+                    id="countdownMinutes"
+                >
+                    00
+                </div>
+
+                <div class="countdown-label">
+                    MINUTES
+                </div>
+
+            </div>
+
+
+            <div class="countdown-divider">
+                :
+            </div>
+
+
+            <!-- SECONDS -->
+            <div class="countdown-unit">
+
+                <div
+                    class="countdown-number"
+                    id="countdownSeconds"
+                >
+                    00
+                </div>
+
+                <div class="countdown-label">
+                    SECONDS
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Message -->
+        <p
+            class="countdown-message"
+            id="countdownMessage"
+        >
+            I'll be waiting right here... ♡
+        </p>
+
+    </div>
+
+
+    <!-- =====================================================
+         FINAL TRANSITION
+    ====================================================== -->
+
+    <div
+        id="countdownTransition"
+        class="countdown-transition"
+    >
+
+        <div class="countdown-transition-glow"></div>
+
+        <div class="countdown-transition-heart">
+            ♡
+        </div>
+
+        <div
+            id="countdownTransitionText"
+            class="countdown-transition-text"
+        >
+            It's time...
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================================
+     MAIN EXPERIENCE
+========================================================= -->
+
+<main id="experience">
+
+
+
+<!-- =========================================================
+     02 — OPENING
+========================================================= -->
+
+<section
+    id="heroSection"
+    class="story-section active"
+>
+
+    <div class="hero-background">
+
+        <div class="hero-sun"></div>
+
+        <div class="hero-orbit orbit-one"></div>
+
+        <div class="hero-orbit orbit-two"></div>
+
+    </div>
+
+
+    <div class="hero-content">
+
+
+        <div class="date-stamp">
+
+            <span>
+                07
+            </span>
+
+            <div>
+                <small>
+                    NOVEMBER
+                </small>
+
+                <strong>
+                    2008
+                </strong>
+            </div>
+
+        </div>
+
+
+        <p class="eyebrow">
+            THE DAY EVERYTHING GOT A LITTLE BRIGHTER
+        </p>
+
+
+        <h1>
+
+            Someone
+
+            <span>
+                wonderful
+            </span>
+
+            was born.
+
+        </h1>
+
+
+        <p class="hero-description">
+
+            And many years later,
+            someone decided that a normal birthday wish
+            simply wasn't enough.
+
+        </p>
+
+
+        <div class="micro-kicker">THE 18TH CHAPTER BEGINS HERE</div>
+
+        <div class="hero-signature">
+
+            <span>
+                made especially for
+            </span>
+
+            <strong>
+                My Abhilipsa ♡
+            </strong>
+
+        </div>
+
+
+        <button
+            id="startButton"
+            class="primary-button"
+        >
+
+            <span>
+                Begin Your Birthday
+            </span>
+
+            <b>
+                →
+            </b>
+
+        </button>
+
+
+        <div class="scroll-hint">
+
+            <span class="scroll-line"></span>
+
+            <small>
+                there's a little story inside
+            </small>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     03 — BIRTHDAY INTRO
+========================================================= -->
+
+<section
+    id="introSection"
+    class="story-section soft-section relationship-intro"
+>
+
+    <div class="story-container intro-container">
+
+
+        <!-- =====================================================
+             OPENING
+        ====================================================== -->
+
+        <header class="intro-header">
+
+            <p class="eyebrow">
+                CHAPTER 01 · THE BEGINNING
+            </p>
+
+            <h2>
+                Before you became
+                my favourite person...
+            </h2>
+
+            <div class="intro-large-text relationship-script-block">
+
+                there was simply
+
+                <span>
+                    you.
+                </span>
+
+            </div>
+
+            <p class="intro-opening">
+                07 November 2008.
+                <br>
+                The day the person who would one day
+                become such an important part of my life
+                came into this world.
+            </p>
+
+            <p class="intro-opening muted relationship-script-line">
+                Aur funny baat ye hai...
+                us din mujhe bilkul idea nahi tha
+                ki years later,
+                main tumhara birthday
+                itne pyaar se celebrate karunga.
+            </p>
+
+        </header>
+
+
+
+        <!-- =====================================================
+             01 · THE DATE
+        ====================================================== -->
+
+        <article class="intro-note intro-card card-01">
+
+            <span class="note-number">
+                01
+            </span>
+
+            <span class="note-label">
+                THE DAY
+            </span>
+
+            <h3>
+                07 November 2008.
+            </h3>
+
+            <p>
+                Duniya ke liye ek normal date thi.
+                Calendar mein ek aur number.
+                Ek aur day.
+            </p>
+
+            <p>
+                But for me,
+                looking at it today,
+                it feels a little different.
+            </p>
+
+            <p>
+                Because that was the day
+                you arrived here...
+                long before either of us knew
+                that someday our paths would cross.
+            </p>
+
+            <p class="card-ending">
+                And somehow,
+                I'm really glad you did.
+            </p>
+
+        </article>
+
+
+
+        <!-- =====================================================
+             02 · BEFORE US
+        ====================================================== -->
+
+        <article class="intro-note intro-card card-02">
+
+            <span class="note-number">
+                02
+            </span>
+
+            <span class="note-label">
+                BEFORE US
+            </span>
+
+            <h3>
+                You had a whole life
+                before I knew you.
+            </h3>
+
+            <p>
+                Tumhari apni childhood thi.
+                Apni memories.
+                Apne dreams.
+                Apne favourite songs.
+                Apni favourite places.
+            </p>
+
+            <p>
+                Aise moments bhi the
+                jinke baare mein mujhe kuch nahi pata.
+            </p>
+
+            <p>
+                And honestly,
+                I wish I could have seen
+                every version of you.
+            </p>
+
+            <p>
+                The little girl you were,
+                the teenager you became,
+                and every version in between.
+            </p>
+
+        </article>
+
+
+
+        <!-- =====================================================
+             03 · THEN WE MET
+        ====================================================== -->
+
+        <article class="intro-note intro-card card-03">
+
+            <span class="note-number">
+                03
+            </span>
+
+            <span class="note-label">
+                OUR STORY
+            </span>
+
+            <h3>
+                And then...
+                somehow, there was us.
+            </h3>
+
+            <p>
+                Life has a strange way of introducing
+                people to each other.
+            </p>
+
+            <p>
+                Sometimes you don't realise
+                the importance of a person
+                when they first enter your life.
+            </p>
+
+            <p>
+                You just talk.
+                You laugh.
+                You get comfortable.
+                You slowly start knowing each other.
+            </p>
+
+            <p class="quote-line">
+                And then one day,
+                you realise...
+                <strong>
+                    "Oh. She's different."
+                </strong>
+            </p>
+
+        </article>
+
+
+
+        <!-- =====================================================
+             04 · THE PERSON
+        ====================================================== -->
+
+        <article class="intro-note intro-card card-04">
+
+            <span class="note-number">
+                04
+            </span>
+
+            <span class="note-label">
+                YOU
+            </span>
+
+            <h3>
+                Somewhere along the way,
+                you became my person.
+            </h3>
+
+            <p>
+                Not just someone I talk to.
+            </p>
+
+            <p>
+                Not just someone I love.
+            </p>
+
+            <p>
+                But someone whose presence
+                slowly became part of my everyday life.
+            </p>
+
+            <p>
+                Tumse baat karna,
+                tumhari random stories sunna,
+                tumhari complaints,
+                tumhari excitement...
+                sab normal sa lagne laga.
+            </p>
+
+            <p class="card-ending">
+                And somehow,
+                "normal" started feeling like home.
+            </p>
+
+        </article>
+
+
+
+        <!-- =====================================================
+             05 · YOUR LITTLE THINGS
+        ====================================================== -->
+
+        <article class="intro-note intro-card card-05">
+
+            <span class="note-number">
+                05
+            </span>
+
+            <span class="note-label">
+                THE LITTLE THINGS
+            </span>
+
+            <h3>
+                It's not only the big things
+                I love about you.
+            </h3>
+
+            <p>
+                It's the little things.
+            </p>
+
+            <p>
+                The way you talk.
+                The way you react.
+                The random things you say.
+                The expressions you make.
+                The little habits you probably
+                don't even notice.
+            </p>
+
+            <p>
+                Kabhi tumhari ek chhoti si baat
+                pura mood change kar deti hai.
+            </p>
+
+            <p class="quote-line">
+                Maybe that's what love really is
+                noticing the little things
+                and loving them anyway.
+            </p>
+
+        </article>
+
+
+
+        <!-- =====================================================
+             06 · THE CHAOS
+        ====================================================== -->
+
+        <article class="intro-note intro-card card-06">
+
+            <span class="note-number">
+                06
+            </span>
+
+            <span class="note-label">
+                THE CHAOS
+            </span>
+
+            <h3>
+                Of course...
+                you're not always easy.
+            </h3>
+
+            <p>
+                Let's be honest.
+            </p>
+
+            <p>
+                Kabhi mood swings.
+                Kabhi unnecessary arguments.
+                Kabhi "kuch nahi hua"
+                jab clearly kuch hua hota hai.
+            </p>
+
+            <p>
+                Kabhi tum right.
+                Kabhi main right.
+                Aur kabhi...
+                obviously main right.
+            </p>
+
+            <p>
+                Okay fine.
+                Mostly tum hi right.
+            </p>
+
+            <p class="card-ending">
+                But I wouldn't trade the chaos
+                for a quieter life.
+            </p>
+
+        </article>
+
+
+
+        <!-- =====================================================
+             07 · THE COMFORT
+        ====================================================== -->
+
+        <article class="intro-note intro-card card-07">
+
+            <span class="note-number">
+                07
+            </span>
+
+            <span class="note-label">
+                COMFORT
+            </span>
+
+            <h3>
+                With you,
+                I don't always need words.
+            </h3>
+
+            <p>
+                There's something beautiful
+                about being comfortable enough
+                to simply exist around someone.
+            </p>
+
+            <p>
+                No pretending.
+                No trying too hard.
+                No need to make every moment special.
+            </p>
+
+            <p>
+                Kabhi bas baat karni hoti hai.
+                Kabhi bas sunna hota hai.
+                Kabhi kuch bhi nahi.
+            </p>
+
+            <p class="quote-line">
+                And somehow,
+                silence doesn't feel empty
+                when it's with you.
+            </p>
+
+        </article>
+
+
+
+        <!-- =====================================================
+             08 · THE LAUGHTER
+        ====================================================== -->
+
+        <article class="intro-note intro-card card-08">
+
+            <span class="note-number">
+                08
+            </span>
+
+            <span class="note-label">
+                THE LAUGHTER
+            </span>
+
+            <h3>
+                You make ordinary days
+                feel less ordinary.
+            </h3>
+
+            <p>
+                Ek normal sa conversation,
+                ek stupid joke,
+                ek random topic...
+                aur suddenly pura mood better.
+            </p>
+
+            <p>
+                Tumhare saath hasi ka reason
+                hamesha logical hona zaroori nahi.
+            </p>
+
+            <p>
+                Sometimes we laugh
+                because something is actually funny.
+            </p>
+
+            <p>
+                Sometimes we laugh
+                because we're both baura.
+            </p>
+
+            <p class="quote-line">
+                And honestly,
+                I love both versions.
+            </p>
+
+        </article>
+
+
+
+        <!-- =====================================================
+             09 · THE SAFE PLACE
+        ====================================================== -->
+
+        <article class="intro-note intro-card card-09">
+
+            <span class="note-number">
+                09
+            </span>
+
+            <span class="note-label">
+                MY SAFE PLACE
+            </span>
+
+            <h3>
+                Somewhere along the way,
+                you became a safe place.
+            </h3>
+
+            <p>
+                A place where I can be myself.
+            </p>
+
+            <p>
+                Where I don't have to pretend
+                that everything is always okay.
+            </p>
+
+            <p>
+                Where I can talk about
+                random dreams,
+                stupid thoughts,
+                fears,
+                plans,
+                everything.
+            </p>
+
+            <p>
+                And knowing that someone
+                will listen...
+                matters more than you know.
+            </p>
+
+        </article>
+
+
+
+        <!-- =====================================================
+             10 · THE MEMORIES
+        ====================================================== -->
+
+        <article class="intro-note intro-card card-10">
+
+            <span class="note-number">
+                10
+            </span>
+
+            <span class="note-label">
+                OUR MEMORIES
+            </span>
+
+            <h3>
+                I don't want just
+                perfect memories with you.
+            </h3>
+
+            <p>
+                I want the real ones too.
+            </p>
+
+            <p>
+                The random conversations.
+                The silly fights.
+                The late replies.
+                The unexpected calls.
+                The moments we couldn't stop laughing.
+            </p>
+
+            <p>
+                Because someday,
+                these ordinary moments
+                might become the memories
+                we miss the most.
+            </p>
+
+            <p class="quote-line">
+                I don't want a perfect story.
+                <br>
+                I want <strong>our</strong> story.
+            </p>
+
+        </article>
+
+
+
+        <!-- =====================================================
+             11 · CHOOSING YOU
+        ====================================================== -->
+
+        <article class="intro-note intro-card card-11">
+
+            <span class="note-number">
+                11
+            </span>
+
+            <span class="note-label">
+                CHOICE
+            </span>
+
+            <h3>
+                Love isn't only a feeling.
+            </h3>
+
+            <p>
+                Sometimes love is choosing someone
+                again and again.
+            </p>
+
+            <p>
+                On the good days.
+                On the difficult days.
+                On the days when everything feels easy.
+                And especially on the days
+                when it doesn't.
+            </p>
+
+            <p>
+                And if life gives me the choice
+                to keep choosing one person...
+            </p>
+
+            <p class="card-ending">
+                I hope I keep choosing you.
+            </p>
+
+        </article>
+
+
+
+        <!-- =====================================================
+             12 · THE FUTURE
+        ====================================================== -->
+
+        <article class="intro-note intro-card card-12">
+
+            <span class="note-number">
+                12
+            </span>
+
+            <span class="note-label">
+                OUR FUTURE
+            </span>
+
+            <h3>
+                There's still so much
+                we haven't lived yet.
+            </h3>
+
+            <p>
+                Abhi toh bahut kuch baaki hai.
+            </p>
+
+            <p>
+                New places.
+                New experiences.
+                New memories.
+                New problems.
+                New celebrations.
+                New birthdays.
+            </p>
+
+            <p>
+                Kuch plans perfectly work karenge.
+                Kuch completely fail honge.
+            </p>
+
+            <p>
+                But I don't need to know
+                exactly what the future looks like.
+            </p>
+
+            <p class="quote-line">
+                I just hope
+                I get to see it with you.
+            </p>
+
+        </article>
+
+
+
+        <!-- =====================================================
+             13 · THE LIFE PARTNER
+        ====================================================== -->
+
+        <article class="intro-note intro-card special-note card-13">
+
+            <span class="note-number">
+                13
+            </span>
+
+            <span class="note-label">
+                MY LIFE PARTNER
+            </span>
+
+            <h3>
+                You're not just someone
+                I love.
+            </h3>
+
+            <p>
+                You're someone
+                I imagine my life with.
+            </p>
+
+            <p>
+                The person I want beside me
+                when things are exciting...
+                and when things are difficult.
+            </p>
+
+            <p>
+                Someone with whom
+                I want to celebrate the wins,
+                survive the bad days,
+                laugh at stupid things,
+                and grow through everything life brings.
+            </p>
+
+            <p>
+                Mujhe future ki har detail nahi pata.
+            </p>
+
+            <p>
+                But one thing I know...
+                I don't want my future
+                to be just about me.
+            </p>
+
+            <p class="quote-line">
+                I want there to be an
+                <strong>us.</strong>
+            </p>
+
+        </article>
+
+
+
+        <!-- =====================================================
+             14 · TODAY
+        ====================================================== -->
+
+        <article class="intro-note intro-card card-14">
+
+            <span class="note-number">
+                14
+            </span>
+
+            <span class="note-label">
+                YOUR BIRTHDAY
+            </span>
+
+            <h3>
+                So today isn't just
+                another birthday to me.
+            </h3>
+
+            <p>
+                Today is the day
+                I get to celebrate
+                the person I love.
+            </p>
+
+            <p>
+                The person who somehow
+                became such a big part
+                of my little world.
+            </p>
+
+            <p>
+                And for one day,
+                I want everything to stop
+                for a moment.
+            </p>
+
+            <p>
+                No stress.
+                No overthinking.
+                No worries.
+            </p>
+
+            <p class="card-ending">
+                Just you.
+                Your smile.
+                And a day that's completely yours.
+            </p>
+
+        </article>
+
+
+
+        <!-- =====================================================
+             15 · MY WISH
+        ====================================================== -->
+
+        <article class="intro-note final-card card-15">
+
+            <span class="note-number">
+                15
+            </span>
+
+            <span class="note-label">
+                ONE WISH
+            </span>
+
+            <h3>
+                If I could give you
+                one thing...
+            </h3>
+
+            <p>
+                I wouldn't give you
+                a perfect life.
+            </p>
+
+            <p>
+                Because a perfect life
+                doesn't exist.
+            </p>
+
+            <p>
+                I'd give you the strength
+                to get through the difficult days,
+                the courage to chase
+                everything you dream about,
+                and enough happiness
+                to make all the difficult days
+                worth it.
+            </p>
+
+            <p>
+                I hope you never feel
+                like you have to become
+                someone else to be loved.
+            </p>
+
+            <p>
+                Because the person you are
+                right now...
+            </p>
+
+            <p class="big-wish">
+                is already the person
+                I choose.
+            </p>
+
+        </article>
+
+
+
+        <!-- =====================================================
+             PERSONAL LOVE MESSAGE
+        ====================================================== -->
+
+        <div class="intro-message">
+
+            <div class="message-mark">
+                “
+            </div>
+
+            <p class="message-main">
+                I don't know what the future
+                will look like.
+            </p>
+
+            <p class="message-hinglish">
+                Shayad life humare liye
+                bahut saare unexpected turns rakhti ho.
+                Shayad sab kuch plan ke according na ho.
+            </p>
+
+            <p class="message-hinglish">
+                But whenever I imagine
+                the person I want beside me
+                through all those chapters...
+            </p>
+
+            <p class="message-main final-message">
+                somehow,
+                it's always you.
+            </p>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             OUR TIMELINE
+        ====================================================== -->
+
+        <div class="intro-timeline">
+
+            <div class="timeline-title">
+                <span></span>
+                OUR LITTLE STORY
+                <span></span>
+            </div>
+
+
+            <div class="timeline-items">
+
+
+                <div class="timeline-item">
+
+                    <span class="timeline-dot"></span>
+
+                    <div>
+
+                        <small>
+                            2008
+                        </small>
+
+                        <strong>
+                            You were born.
+                        </strong>
+
+                        <p>
+                            Long before I knew you,
+                            your story had already begun.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="timeline-item">
+
+                    <span class="timeline-dot"></span>
+
+                    <div>
+
+                        <small>
+                            YEARS LATER
+                        </small>
+
+                        <strong>
+                            Our paths crossed.
+                        </strong>
+
+                        <p>
+                            Two completely different lives
+                            somehow became part of
+                            the same story.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="timeline-item">
+
+                    <span class="timeline-dot"></span>
+
+                    <div>
+
+                        <small>
+                            THEN
+                        </small>
+
+                        <strong>
+                            You became important.
+                        </strong>
+
+                        <p>
+                            Conversations became memories,
+                            and memories became something
+                            much bigger.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="timeline-item">
+
+                    <span class="timeline-dot"></span>
+
+                    <div>
+
+                        <small>
+                            NOW
+                        </small>
+
+                        <strong>
+                            You're my person.
+                        </strong>
+
+                        <p>
+                            The person I want to celebrate,
+                            annoy, support,
+                            laugh with and love.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="timeline-item future-item">
+
+                    <span class="timeline-dot"></span>
+
+                    <div>
+
+                        <small>
+                            NEXT
+                        </small>
+
+                        <strong>
+                            Whatever comes next...
+                        </strong>
+
+                        <p>
+                            I hope we get to write
+                            that chapter together.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             CLOSING
+        ====================================================== -->
+
+        <div class="intro-closing">
+
+            <p class="closing-small">
+                Before we move to the next chapter...
+            </p>
+
+            <h3>
+                there's just one thing
+                I want you to know.
+            </h3>
+
+            <p>
+                I don't love you only
+                for the best version of you.
+            </p>
+
+            <p>
+                I love the real you.
+                The happy you.
+                The irritated you.
+                The sleepy you.
+                The dramatic you.
+                The stubborn you.
+                The soft you.
+            </p>
+
+            <p>
+                All the little versions.
+                All the imperfect moments.
+                All the memories
+                we've already made.
+            </p>
+
+            <p>
+                And all the ones
+                we haven't made yet.
+            </p>
+
+            <p class="closing-final">
+                Happy Birthday
+                <br>
+                <strong>
+                    to my favourite person.
+                </strong>
+            </p>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             CONTINUE
+        ====================================================== -->
+
+        <button
+            id="introContinue"
+            class="text-button"
+        >
+
+            <span class="button-text">
+                Keep going
+            </span>
+
+            <span class="button-subtext">
+                Our story isn't over yet
+            </span>
+
+            <span class="button-arrow">
+                ↓
+            </span>
+
+        </button>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     04 — BIRTHDAY GIFT
+========================================================= -->
+
+<!-- =========================================================
+     04 — THE GIFT
+     LIFE PARTNER EDITION
+========================================================= -->
+
+<section
+    id="giftSection"
+    class="story-section gift-section gift-section-premium"
+>
+
+
+<!-- Soft decorative atmosphere -->
+<div class="gift-atmosphere" aria-hidden="true">
+    <span class="gift-orb gift-orb-one"></span>
+    <span class="gift-orb gift-orb-two"></span>
+    <span class="gift-orb gift-orb-three"></span>
+
+    <span class="gift-floating-heart heart-one">♡</span>
+    <span class="gift-floating-heart heart-two">♡</span>
+    <span class="gift-floating-heart heart-three">♡</span>
+    <span class="gift-floating-heart heart-four">♡</span>
+
+    <span class="gift-spark spark-one">✦</span>
+    <span class="gift-spark spark-two">✧</span>
+    <span class="gift-spark spark-three">✦</span>
+</div>
+
+
+<div class="story-container gift-container">
+
+
+    <!-- =====================================================
+         CHAPTER INTRO
+    ====================================================== -->
+
+    <div class="gift-heading">
+
+        <p class="eyebrow gift-eyebrow">
+            CHAPTER 02 · A LITTLE SOMETHING
+        </p>
+
+        <p class="gift-handwritten">
+            I made this with you in mind...
+        </p>
+
+        <h2>
+            I couldn't just
+            <span class="gift-heading-script">
+                buy you a gift.
+            </span>
+        </h2>
+
+        <p class="section-description gift-description">
+            Because you're not just someone
+            I'm celebrating today.
+            <br>
+            You're someone I want to keep
+            celebrating for years.
+        </p>
+
+    </div>
+
+
+    <!-- =====================================================
+         SMALL LETTER CARD
+    ====================================================== -->
+
+    <div class="gift-letter-card">
+
+        <div class="gift-letter-pin">
+            ♡
+        </div>
+
+        <div class="gift-letter-top">
+            <span>for my favourite person</span>
+            <span>♥</span>
+        </div>
+
+        <p class="gift-letter-script">
+            Dear Abhilipsa,
+        </p>
+
+        <p class="gift-letter-text">
+            I know a website can't hold everything
+            I feel for you.
+            <br><br>
+            But maybe it can hold a few little things
+            I never want you to forget.
+        </p>
+
+        <div class="gift-letter-sign">
+            yours,
+            <span>always.</span>
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         MAIN GIFT EXPERIENCE
+    ====================================================== -->
+
+    <div class="gift-experience">
+
+
+        <!-- Left / top label -->
+
+        <div class="gift-side-note gift-side-note-left">
+            <span>01</span>
+            <p>
+                something<br>
+                made for you
+            </p>
+        </div>
+
+
+        <!-- =================================================
+             GIFT STAGE
+        ================================================== -->
+
+        <div class="gift-stage">
+
+
+            <!-- Glow behind the box -->
+
+            <div class="gift-halo" aria-hidden="true"></div>
+
+            <div class="gift-shadow" aria-hidden="true"></div>
+
+
+            <!-- Main interactive gift -->
+
+            <button
+                id="giftBox"
+                class="gift-box gift-box-premium"
+                type="button"
+                aria-label="Open your birthday gift"
+                aria-describedby="giftHint"
+            >
+
+                <!-- Back paper layer -->
+
+                <div class="gift-paper-back">
+                    <span></span>
+                    <span></span>
+                </div>
+
+
+                <!-- Gift body -->
+
+                <div class="gift-body">
+
+                    <div class="gift-body-shine"></div>
+
+                    <div class="gift-ribbon vertical">
+                        <span></span>
+                    </div>
+
+                    <div class="gift-ribbon horizontal">
+                        <span></span>
+                    </div>
+
+                    <div class="gift-body-detail">
+                        <span>♡</span>
+                    </div>
+
+                </div>
+
+
+                <!-- Gift lid -->
+
+                <div class="gift-lid">
+
+                    <div class="gift-lid-top"></div>
+
+                    <span class="gift-lid-ribbon"></span>
+
+                    <div class="gift-lid-label">
+                        <small>FOR YOU</small>
+                        <strong>♡</strong>
+                    </div>
+
+                </div>
+
+
+                <!-- Bow -->
+
+                <div class="gift-bow">
+
+                    <i class="bow-left"></i>
+                    <i class="bow-right"></i>
+                    <b class="bow-center"></b>
+
+                </div>
+
+
+                <!-- Light -->
+
+                <div class="gift-glow"></div>
+
+
+                <!-- Tiny hearts -->
+
+                <span class="gift-box-heart heart-a">♡</span>
+                <span class="gift-box-heart heart-b">♡</span>
+
+            </button>
+
+
+            <!-- Interaction hint -->
+
+            <div
+                id="giftHint"
+                class="interaction-hint gift-interaction-hint"
+            >
+                <span class="hint-dot"></span>
+
+                <span class="hint-main">
+                    open this
+                </span>
+
+                <span class="hint-script">
+                    I made it for you ♡
+                </span>
+            </div>
+
+
+            <!-- Click instruction -->
+
+            <p class="gift-click-note">
+                tap the box
+                <span>·</span>
+                take your time
+            </p>
+
+        </div>
+
+
+        <!-- Right / bottom label -->
+
+        <div class="gift-side-note gift-side-note-right">
+            <span>02</span>
+            <p>
+                unwrap<br>
+                the feeling
+            </p>
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         REVEAL
+    ====================================================== -->
+
+    <div
+        id="giftReveal"
+        class="gift-reveal gift-reveal-premium"
+    >
+
+        <div class="gift-reveal-line"></div>
+
+        <div class="gift-reveal-icon">
+            <span>♡</span>
+        </div>
+
+        <p class="gift-reveal-kicker">
+            AND HERE'S THE THING...
+        </p>
+
+        <h3>
+            The real gift
+            <span>was never inside the box.</span>
+        </h3>
+
+        <p class="gift-reveal-text">
+            It is every little moment,
+            every stupid laugh,
+            every late-night conversation,
+            every memory still waiting to happen,
+            and every version of us
+            I haven't met yet.
+        </p>
+
+        <p class="gift-reveal-script">
+            I want all of it with you.
+        </p>
+
+        <div class="gift-reveal-line"></div>
+
+    </div>
+
+
+    <!-- =====================================================
+         THREE LITTLE PROMISES
+    ====================================================== -->
+
+    <div class="gift-promises">
+
+        <div class="gift-promise">
+
+            <span class="promise-number">
+                01
+            </span>
+
+            <span class="promise-icon">
+                ♡
+            </span>
+
+            <p>
+                I will keep choosing
+                you.
+            </p>
+
+        </div>
+
+
+        <div class="gift-promise">
+
+            <span class="promise-number">
+                02
+            </span>
+
+            <span class="promise-icon">
+                ✦
+            </span>
+
+            <p>
+                I will keep making
+                memories with you.
+            </p>
+
+        </div>
+
+
+        <div class="gift-promise">
+
+            <span class="promise-number">
+                03
+            </span>
+
+            <span class="promise-icon">
+                ∞
+            </span>
+
+            <p>
+                I will keep finding
+                reasons to stay.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         FINAL GIFT NOTE
+    ====================================================== -->
+
+    <div class="gift-final-note">
+
+        <span class="gift-final-mark">
+            ✦
+        </span>
+
+        <p class="gift-final-script">
+            Maybe this isn't the biggest gift
+            you'll ever receive.
+        </p>
+
+        <p class="gift-final-main">
+            But it carries a little piece
+            of my heart in every section.
+        </p>
+
+        <p class="gift-final-small">
+            And honestly...
+            <span>
+                that's all I wanted.
+            </span>
+        </p>
+
+    </div>
+
+
+    <!-- =====================================================
+         CONTINUE
+    ====================================================== -->
+
+    <div class="gift-next">
+
+        <div class="gift-next-line"></div>
+
+        <button
+            id="giftContinue"
+            class="text-button gated gift-continue-button"
+            type="button"
+        >
+            <span class="continue-small">
+                there's more
+            </span>
+
+            <span class="continue-main">
+                Come see our story
+            </span>
+
+            <span class="continue-arrow">
+                →
+            </span>
+        </button>
+
+        <p class="gift-next-caption">
+            and this is only the beginning...
+        </p>
+
+    </div>
+
+
+</div>
+
+
+</section>
+<!-- END GIFT SECTION -->
+
+
+
+
+<!-- =========================================================
+     05 — TIMELINE
+========================================================= -->
+<!-- =========================================================
+     CHAPTER 03 — EVERYTHING ABOUT YOU
+========================================================= -->
+
+<section
+    id="timelineSection"
+    class="story-section timeline-section chapter3-section"
+>
+
+    <!-- =====================================================
+         SOFT ATMOSPHERE
+    ====================================================== -->
+
+    <div class="chapter3-atmosphere" aria-hidden="true">
+
+        <span class="chapter3-orb orb-1"></span>
+        <span class="chapter3-orb orb-2"></span>
+        <span class="chapter3-orb orb-3"></span>
+
+        <span class="chapter3-floating-heart heart-1">♡</span>
+        <span class="chapter3-floating-heart heart-2">♡</span>
+        <span class="chapter3-floating-heart heart-3">♡</span>
+        <span class="chapter3-floating-heart heart-4">♡</span>
+
+        <span class="chapter3-spark spark-1">✦</span>
+        <span class="chapter3-spark spark-2">✧</span>
+        <span class="chapter3-spark spark-3">✦</span>
+
+    </div>
+
+
+    <div class="story-container chapter3-container">
+
+
+        <!-- =================================================
+             HEADER
+        ================================================== -->
+
+        <header class="chapter3-header">
+
+            <p class="eyebrow">
+                CHAPTER 03 · HER
+            </p>
+
+            <p class="chapter3-handwritten">
+                If I had to write down everything I love about you...
+            </p>
+
+            <h2>
+                Where do I
+                <span>even begin?</span>
+            </h2>
+
+            <p class="section-description">
+                Maybe with your eyes.
+                <br>
+                Maybe with your smile.
+                <br>
+                Maybe with all those little things
+                you don't even realise I notice.
+            </p>
+
+            <p class="chapter3-intro-script">
+                So let me try.
+            </p>
+
+            <div class="chapter3-divider">
+                <span></span>
+                <i>♡</i>
+                <span></span>
+            </div>
+
+        </header>
+
+
+        <!-- =================================================
+             01 — EYES
+        ================================================== -->
+
+        <article class="timeline-item chapter3-item">
+
+            <div class="timeline-dot chapter3-number">
+                01
+            </div>
+
+            <div class="timeline-card chapter3-card">
+
+                <span class="chapter3-label">
+                    YOUR EYES
+                </span>
+
+                <h3>
+                    I think your eyes
+                    <span>are my favourite place.</span>
+                </h3>
+
+                <p>
+                    There's something about them
+                    that I can never properly explain.
+                    I could look at them for a while
+                    and still feel like I haven't
+                    looked enough.
+                </p>
+
+                <p>
+                    They have this quiet kind of beauty.
+                    The kind that doesn't need attention
+                    to be noticed.
+                </p>
+
+                <p class="chapter3-script">
+                    If getting lost had a beautiful meaning,
+                    it would probably look like your eyes.
+                </p>
+
+                <div class="chapter3-card-mark">
+                    ♡
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             02 — SMILE
+        ================================================== -->
+
+        <article class="timeline-item reverse chapter3-item">
+
+            <div class="timeline-dot chapter3-number">
+                02
+            </div>
+
+            <div class="timeline-card chapter3-card">
+
+                <span class="chapter3-label">
+                    YOUR SMILE
+                </span>
+
+                <h3>
+                    Your smile
+                    <span>does something to me.</span>
+                </h3>
+
+                <p>
+                    I don't know how something so simple
+                    can make an entire moment feel lighter.
+                </p>
+
+                <p>
+                    The funniest part is,
+                    you probably don't even realise
+                    how beautiful you look when you smile.
+                </p>
+
+                <p class="chapter3-script">
+                    Please keep smiling.
+                    I like the world better when you do.
+                </p>
+
+                <div class="chapter3-card-mark">
+                    ✦
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             03 — LIPS
+        ================================================== -->
+
+        <article class="timeline-item chapter3-item">
+
+            <div class="timeline-dot chapter3-number">
+                03
+            </div>
+
+            <div class="timeline-card chapter3-card">
+
+                <span class="chapter3-label">
+                    YOUR LIPS
+                </span>
+
+                <h3>
+                    Even your words
+                    <span>look beautiful on you.</span>
+                </h3>
+
+                <p>
+                    Maybe it's the way you speak.
+                    Maybe it's the little expressions
+                    that appear when you're talking.
+                </p>
+
+                <p>
+                    Whatever it is,
+                    I've started noticing those tiny details
+                    more than I probably should.
+                </p>
+
+                <p class="chapter3-script">
+                    Somehow ordinary words
+                    sound different when they're yours.
+                </p>
+
+                <div class="chapter3-card-mark">
+                    ♡
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             04 — HAIR
+        ================================================== -->
+
+        <article class="timeline-item reverse chapter3-item">
+
+            <div class="timeline-dot chapter3-number">
+                04
+            </div>
+
+            <div class="timeline-card chapter3-card">
+
+                <span class="chapter3-label">
+                    YOUR HAIR
+                </span>
+
+                <h3>
+                    Even when it's messy,
+                    <span>you somehow look beautiful.</span>
+                </h3>
+
+                <p>
+                    I don't think you need everything
+                    to be perfectly arranged
+                    to look pretty.
+                </p>
+
+                <p>
+                    Sometimes the most beautiful version
+                    of you is the completely unplanned one.
+                </p>
+
+                <p class="chapter3-script">
+                    Perfect was never the point.
+                    You were.
+                </p>
+
+                <div class="chapter3-card-mark">
+                    ✧
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             05 — FACE
+        ================================================== -->
+
+        <article class="timeline-item chapter3-item">
+
+            <div class="timeline-dot chapter3-number">
+                05
+            </div>
+
+            <div class="timeline-card chapter3-card">
+
+                <span class="chapter3-label">
+                    YOUR FACE
+                </span>
+
+                <h3>
+                    I could recognise
+                    <span>every little expression of yours.</span>
+                </h3>
+
+                <p>
+                    The happy one.
+                    The annoyed one.
+                    The confused one.
+                    The one where you're trying
+                    very hard not to laugh.
+                </p>
+
+                <p>
+                    Somehow I've started memorising
+                    all of them without even trying.
+                </p>
+
+                <p class="chapter3-script">
+                    Every expression has a little piece
+                    of you in it.
+                </p>
+
+                <div class="chapter3-card-mark">
+                    ♡
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             06 — VOICE
+        ================================================== -->
+
+        <article class="timeline-item reverse chapter3-item">
+
+            <div class="timeline-dot chapter3-number">
+                06
+            </div>
+
+            <div class="timeline-card chapter3-card">
+
+                <span class="chapter3-label">
+                    YOUR VOICE
+                </span>
+
+                <h3>
+                    Your voice
+                    <span>feels familiar.</span>
+                </h3>
+
+                <p>
+                    There are so many voices in this world,
+                    but somehow yours is different.
+                </p>
+
+                <p>
+                    Maybe because I don't just hear it.
+                    I notice it.
+                    I remember it.
+                </p>
+
+                <p class="chapter3-script">
+                    Some voices are heard.
+                    Yours stays.
+                </p>
+
+                <div class="chapter3-card-mark">
+                    ♪
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             07 — HANDS
+        ================================================== -->
+
+        <article class="timeline-item chapter3-item">
+
+            <div class="timeline-dot chapter3-number">
+                07
+            </div>
+
+            <div class="timeline-card chapter3-card">
+
+                <span class="chapter3-label">
+                    YOUR HANDS
+                </span>
+
+                <h3>
+                    It's funny how
+                    <span>I notice the smallest things.</span>
+                </h3>
+
+                <p>
+                    The little gestures.
+                    The way you move your hands
+                    while explaining something.
+                    The tiny things you do
+                    without thinking.
+                </p>
+
+                <p>
+                    They're ordinary things.
+                    But because they're yours,
+                    I remember them.
+                </p>
+
+                <p class="chapter3-script">
+                    Maybe that's what loving someone does.
+                    It makes little things unforgettable.
+                </p>
+
+                <div class="chapter3-card-mark">
+                    ♡
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             08 — LAUGH
+        ================================================== -->
+
+        <article class="timeline-item reverse chapter3-item">
+
+            <div class="timeline-dot chapter3-number">
+                08
+            </div>
+
+            <div class="timeline-card chapter3-card">
+
+                <span class="chapter3-label">
+                    YOUR LAUGH
+                </span>
+
+                <h3>
+                    Your laugh
+                    <span>is impossible not to love.</span>
+                </h3>
+
+                <p>
+                    Especially the real one.
+                    The one that happens before
+                    you remember to control yourself.
+                </p>
+
+                <p>
+                    The kind of laugh where
+                    everything else disappears
+                    for a moment.
+                </p>
+
+                <p class="chapter3-script">
+                    I hope I get to be
+                    one of the reasons for that laugh
+                    for a very long time.
+                </p>
+
+                <div class="chapter3-card-mark">
+                    ♡
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             09 — EXPRESSIONS
+        ================================================== -->
+
+        <article class="timeline-item chapter3-item">
+
+            <div class="timeline-dot chapter3-number">
+                09
+            </div>
+
+            <div class="timeline-card chapter3-card">
+
+                <span class="chapter3-label">
+                    YOUR EXPRESSIONS
+                </span>
+
+                <h3>
+                    You don't even realise
+                    <span>how expressive you are.</span>
+                </h3>
+
+                <p>
+                    Sometimes your face tells me
+                    what you're thinking
+                    before you say anything.
+                </p>
+
+                <p>
+                    And honestly,
+                    those tiny reactions
+                    are some of the cutest things about you.
+                </p>
+
+                <p class="chapter3-script">
+                    I notice.
+                    Even when you think I don't.
+                </p>
+
+                <div class="chapter3-card-mark">
+                    ✦
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             10 — YOUR PRESENCE
+        ================================================== -->
+
+        <article class="timeline-item reverse chapter3-item">
+
+            <div class="timeline-dot chapter3-number">
+                10
+            </div>
+
+            <div class="timeline-card chapter3-card">
+
+                <span class="chapter3-label">
+                    YOUR PRESENCE
+                </span>
+
+                <h3>
+                    You don't have to do anything
+                    <span>to be special.</span>
+                </h3>
+
+                <p>
+                    Sometimes just having you around
+                    is enough to make an ordinary day
+                    feel a little different.
+                </p>
+
+                <p>
+                    You have this quiet effect
+                    on my world that I don't know
+                    how to put into words.
+                </p>
+
+                <p class="chapter3-script">
+                    Your presence is a feeling.
+                    And I really like that feeling.
+                </p>
+
+                <div class="chapter3-card-mark">
+                    ∞
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             11 — PERSONALITY
+        ================================================== -->
+
+        <article class="timeline-item chapter3-item">
+
+            <div class="timeline-dot chapter3-number">
+                11
+            </div>
+
+            <div class="timeline-card chapter3-card">
+
+                <span class="chapter3-label">
+                    WHO YOU ARE
+                </span>
+
+                <h3>
+                    Your beauty
+                    <span>was never only about your face.</span>
+                </h3>
+
+                <p>
+                    It's the way you think.
+                    The way you care.
+                    The way you get excited.
+                    The way you become stubborn.
+                    The way you stay completely yourself.
+                </p>
+
+                <p>
+                    That's the part of you
+                    I admire even more.
+                </p>
+
+                <p class="chapter3-script">
+                    Pretty is what I see.
+                    You are what I love.
+                </p>
+
+                <div class="chapter3-card-mark">
+                    ♡
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             12 — EVERYTHING
+        ================================================== -->
+
+        <article class="timeline-item reverse chapter3-item">
+
+            <div class="timeline-dot chapter3-number">
+                12
+            </div>
+
+            <div class="timeline-card chapter3-card">
+
+                <span class="chapter3-label">
+                    EVERYTHING
+                </span>
+
+                <h3>
+                    And then there are
+                    <span>all the things I can't describe.</span>
+                </h3>
+
+                <p>
+                    The little habits.
+                    The random things you say.
+                    The way you react.
+                    The tiny details nobody else notices.
+                </p>
+
+                <p>
+                    I could keep writing about you
+                    for pages and still feel
+                    like something is missing.
+                </p>
+
+                <p class="chapter3-script">
+                    Because every time I think
+                    I've noticed everything...
+                </p>
+
+                <p class="chapter3-final-line">
+                    I find another reason
+                    to love you.
+                </p>
+
+                <div class="chapter3-card-mark">
+                    ♡
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- =================================================
+             FINAL CHAPTER MESSAGE
+        ================================================== -->
+
+        <div class="chapter3-ending">
+
+            <div class="chapter3-ending-line"></div>
+
+            <p class="chapter3-ending-small">
+                I could write about your eyes,
+                your smile, your voice,
+                your laugh,
+                your little habits...
+            </p>
+
+            <h3>
+                and still,
+                <span>it wouldn't be enough.</span>
+            </h3>
+
+            <p class="chapter3-ending-script">
+                Because you were never just
+                one beautiful thing.
+            </p>
+
+            <p class="chapter3-ending-main">
+                You're a thousand little things
+                I somehow ended up loving.
+            </p>
+
+            <div class="chapter3-ending-heart">
+                ♡
+            </div>
+
+            <p class="chapter3-ending-note">
+                And if this chapter had
+                a thousand more pages...
+                <br>
+                I'd still want to write them all about you.
+            </p>
+
+            <div class="chapter3-ending-line"></div>
+
+        </div>
+
+
+        <!-- =================================================
+             CONTINUE
+        ================================================== -->
+
+        <div class="chapter3-next">
+
+            <p>
+                okay...
+                enough about how beautiful you are.
+            </p>
+
+            <p class="chapter3-next-script">
+                for now.
+            </p>
+
+            <button
+                id="timelineContinue"
+                class="text-button chapter3-continue"
+                type="button"
+            >
+                <span>
+                    There's more
+                </span>
+
+                <strong>
+                    Keep going
+                </strong>
+
+                <b>
+                    →
+                </b>
+
+            </button>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     END CHAPTER 03
+========================================================= -->
+<!-- =========================================================
+     06 — MEMORY GALLERY
+========================================================= -->
+<!-- =========================================================
+     CHAPTER 04 — THE MEMORY ARCHIVE
+========================================================= -->
+
+<section
+    id="memoriesSection"
+    class="story-section memories-section memories-premium"
+>
+
+    <!-- =====================================================
+         AMBIENT BACKGROUND
+    ====================================================== -->
+
+    <div class="memories-atmosphere" aria-hidden="true">
+
+        <span class="memories-orb memories-orb-1"></span>
+        <span class="memories-orb memories-orb-2"></span>
+        <span class="memories-orb memories-orb-3"></span>
+
+        <span class="memories-heart memories-heart-1">♡</span>
+        <span class="memories-heart memories-heart-2">♡</span>
+        <span class="memories-heart memories-heart-3">♡</span>
+
+        <span class="memories-spark memories-spark-1">✦</span>
+        <span class="memories-spark memories-spark-2">✧</span>
+
+    </div>
+
+
+    <div class="story-container memories-container">
+
+
+        <!-- =================================================
+             CHAPTER HEADER
+        ================================================== -->
+
+        <header class="memories-header">
+
+            <div class="memories-chapter-label">
+
+                <span class="label-line"></span>
+
+                <span>
+                    CHAPTER 04
+                </span>
+
+                <span class="label-line"></span>
+
+            </div>
+
+
+            <p class="memories-handwritten">
+                a little collection of us...
+            </p>
+
+
+            <h2>
+                Some memories
+                <span>
+                    deserve another look.
+                </span>
+            </h2>
+
+
+            <p class="section-description memories-intro">
+
+                Because photographs don't just
+                remember faces.
+
+                <br>
+
+                Sometimes,
+                they remember how a moment felt.
+
+            </p>
+
+
+            <div class="memories-header-mark">
+                <span></span>
+                ♡
+                <span></span>
+            </div>
+
+        </header>
+
+
+
+        <!-- =================================================
+             MEMORY INTRO NOTE
+        ================================================== -->
+
+        <div class="memory-intro-card">
+
+            <div class="intro-card-top">
+
+                <span>
+                    MEMORY ARCHIVE
+                </span>
+
+                <span>
+                    04 / 08
+                </span>
+
+            </div>
+
+
+            <div class="intro-card-body">
+
+                <p class="intro-card-script">
+                    I don't remember every day...
+                </p>
+
+                <h3>
+                    But I remember
+                    <span>
+                        how you made them feel.
+                    </span>
+                </h3>
+
+                <p>
+                    So here's a tiny collection
+                    of moments I never want
+                    to become ordinary.
+                </p>
+
+            </div>
+
+
+            <div class="intro-card-footer">
+
+                <span>
+                    preserved with love
+                </span>
+
+                <b>
+                    ♡
+                </b>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             FEATURED MEMORY
+        ================================================== -->
+
+        <article class="featured-memory">
+
+            <div class="featured-memory-image">
+
+                <div class="memory-photo">
+
+                    <img
+                        loading="lazy"
+                        decoding="async"
+                        src="assets/images/memory1.jpg"
+                        alt="A little memory"
+                    >
+
+                    <div class="memory-photo-shade"></div>
+
+                    <span class="memory-index">
+                        01
+                    </span>
+
+                    <span class="memory-pin">
+                        ♡
+                    </span>
+
+                </div>
+
+
+                <div class="featured-memory-stamp">
+                    KEEP THIS ONE
+                </div>
+
+
+                <div class="featured-memory-date">
+                    <span>
+                        MEMORY
+                    </span>
+
+                    <strong>
+                        01
+                    </strong>
+                </div>
+
+            </div>
+
+
+            <div class="featured-memory-content">
+
+                <p class="memory-category">
+                    ONE OF THOSE DAYS
+                </p>
+
+
+                <h3>
+                    The kind of moment
+                    <span>
+                        you don't know you'll miss.
+                    </span>
+                </h3>
+
+
+                <p class="featured-memory-text">
+
+                    Maybe it didn't feel special
+                    when it was happening.
+
+                    <br><br>
+
+                    Maybe we didn't know
+                    that one day we'd look back
+                    and wish we could live
+                    that exact little moment again.
+
+                </p>
+
+
+                <p class="memory-script">
+                    Some moments become memories
+                    before we even realise it.
+                </p>
+
+
+                <div class="featured-memory-signature">
+
+                    <span>
+                        kept forever
+                    </span>
+
+                    <i>
+                        ♡
+                    </i>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             MEMORY GRID
+        ================================================== -->
+
+        <div class="memory-collection">
+
+
+            <!-- MEMORY 02 -->
+
+            <article class="memory-card memory-card-02">
+
+                <div class="memory-photo">
+
+                    <img
+                        loading="lazy"
+                        decoding="async"
+                        src="assets/images/memory2.jpg"
+                        alt="A little memory"
+                    >
+
+                    <div class="memory-photo-shade"></div>
+
+                    <span class="memory-index">
+                        02
+                    </span>
+
+                    <span class="memory-pin">
+                        ♡
+                    </span>
+
+                </div>
+
+
+                <div class="memory-card-content">
+
+                    <span class="memory-category">
+                        LITTLE THINGS
+                    </span>
+
+                    <h3>
+                        Somehow,
+                        these became
+                        the best ones.
+                    </h3>
+
+                    <p>
+                        The random moments,
+                        the silly conversations,
+                        the things we never planned.
+                    </p>
+
+                    <div class="memory-card-footer">
+
+                        <span>
+                            MEMORY 02
+                        </span>
+
+                        <i>
+                            ✦
+                        </i>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- MEMORY 03 -->
+
+            <article class="memory-card memory-card-03">
+
+                <div class="memory-photo">
+
+                    <img
+                        loading="lazy"
+                        decoding="async"
+                        src="assets/images/memory3.jpg"
+                        alt="A happy memory"
+                    >
+
+                    <div class="memory-photo-shade"></div>
+
+                    <span class="memory-index">
+                        03
+                    </span>
+
+                    <span class="memory-pin">
+                        ♡
+                    </span>
+
+                </div>
+
+
+                <div class="memory-card-content">
+
+                    <span class="memory-category">
+                        THAT SMILE
+                    </span>
+
+                    <h3>
+                        Proof that happiness
+                        can look this simple.
+                    </h3>
+
+                    <p>
+                        One photograph,
+                        one expression,
+                        and somehow an entire feeling
+                        comes rushing back.
+                    </p>
+
+                    <div class="memory-card-footer">
+
+                        <span>
+                            MEMORY 03
+                        </span>
+
+                        <i>
+                            ♡
+                        </i>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- MEMORY 04 -->
+
+            <article class="memory-card memory-card-04">
+
+                <div class="memory-photo">
+
+                    <img
+                        loading="lazy"
+                        decoding="async"
+                        src="assets/images/memory4.jpg"
+                        alt="A favourite memory"
+                    >
+
+                    <div class="memory-photo-shade"></div>
+
+                    <span class="memory-index">
+                        04
+                    </span>
+
+                    <span class="memory-pin">
+                        ♡
+                    </span>
+
+                </div>
+
+
+                <div class="memory-card-content">
+
+                    <span class="memory-category">
+                        KEEP THIS ONE
+                    </span>
+
+                    <h3>
+                        Some moments
+                        are worth keeping forever.
+                    </h3>
+
+                    <p>
+                        Not because they were perfect.
+                        But because they were ours.
+                    </p>
+
+                    <div class="memory-card-footer">
+
+                        <span>
+                            MEMORY 04
+                        </span>
+
+                        <i>
+                            ✧
+                        </i>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- MEMORY 05 -->
+
+            <article class="memory-card memory-card-05">
+
+                <div class="memory-photo">
+
+                    <img
+                        loading="lazy"
+                        decoding="async"
+                        src="assets/images/memory5.jpg"
+                        alt="A beautiful memory"
+                    >
+
+                    <div class="memory-photo-shade"></div>
+
+                    <span class="memory-index">
+                        05
+                    </span>
+
+                    <span class="memory-pin">
+                        ♡
+                    </span>
+
+                </div>
+
+
+                <div class="memory-card-content">
+
+                    <span class="memory-category">
+                        ANOTHER ONE
+                    </span>
+
+                    <h3>
+                        A moment
+                        I'd happily live twice.
+                    </h3>
+
+                    <p>
+                        If memories had a replay button,
+                        this one would probably
+                        be pressed too many times.
+                    </p>
+
+                    <div class="memory-card-footer">
+
+                        <span>
+                            MEMORY 05
+                        </span>
+
+                        <i>
+                            ♡
+                        </i>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- MEMORY 06 -->
+
+            <article class="memory-card memory-card-06">
+
+                <div class="memory-photo">
+
+                    <img
+                        loading="lazy"
+                        decoding="async"
+                        src="assets/images/memory6.jpg"
+                        alt="A precious memory"
+                    >
+
+                    <div class="memory-photo-shade"></div>
+
+                    <span class="memory-index">
+                        06
+                    </span>
+
+                    <span class="memory-pin">
+                        ♡
+                    </span>
+
+                </div>
+
+
+                <div class="memory-card-content">
+
+                    <span class="memory-category">
+                        STILL SMILING
+                    </span>
+
+                    <h3>
+                        Funny how one picture
+                        can bring everything back.
+                    </h3>
+
+                    <p>
+                        The place,
+                        the mood,
+                        the little details...
+                        suddenly they're all here again.
+                    </p>
+
+                    <div class="memory-card-footer">
+
+                        <span>
+                            MEMORY 06
+                        </span>
+
+                        <i>
+                            ✦
+                        </i>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- MEMORY 07 -->
+
+            <article class="memory-card memory-card-07">
+
+                <div class="memory-photo">
+
+                    <img
+                        loading="lazy"
+                        decoding="async"
+                        src="assets/images/memory7.jpg"
+                        alt="A favourite moment"
+                    >
+
+                    <div class="memory-photo-shade"></div>
+
+                    <span class="memory-index">
+                        07
+                    </span>
+
+                    <span class="memory-pin">
+                        ♡
+                    </span>
+
+                </div>
+
+
+                <div class="memory-card-content">
+
+                    <span class="memory-category">
+                        FAVOURITE
+                    </span>
+
+                    <h3>
+                        Some pictures
+                        simply feel like home.
+                    </h3>
+
+                    <p>
+                        No explanation needed.
+                        Just a moment
+                        worth keeping close.
+                    </p>
+
+                    <div class="memory-card-footer">
+
+                        <span>
+                            MEMORY 07
+                        </span>
+
+                        <i>
+                            ♡
+                        </i>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- MEMORY 08 -->
+
+            <article class="memory-card memory-card-08">
+
+                <div class="memory-photo">
+
+                    <img
+                        loading="lazy"
+                        decoding="async"
+                        src="assets/images/memory8.jpg"
+                        alt="A beautiful moment"
+                    >
+
+                    <div class="memory-photo-shade"></div>
+
+                    <span class="memory-index">
+                        08
+                    </span>
+
+                    <span class="memory-pin">
+                        ♡
+                    </span>
+
+                </div>
+
+
+                <div class="memory-card-content">
+
+                    <span class="memory-category">
+                        LAST FRAME
+                    </span>
+
+                    <h3>
+                        And somehow,
+                        I'd still choose this moment.
+                    </h3>
+
+                    <p>
+                        Because some memories
+                        don't really belong
+                        in the past.
+                    </p>
+
+                    <div class="memory-card-footer">
+
+                        <span>
+                            MEMORY 08
+                        </span>
+
+                        <i>
+                            ∞
+                        </i>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             FILM STRIP
+        ================================================== -->
+
+        <div class="memory-film">
+
+            <div class="film-perforation film-top"></div>
+
+            <div class="film-content">
+
+                <span>
+                    KEEP
+                </span>
+
+                <span>
+                    THE
+                </span>
+
+                <strong>
+                    GOOD
+                </strong>
+
+                <span>
+                    DAYS
+                </span>
+
+                <span>
+                    CLOSE
+                </span>
+
+                <i>
+                    ♡
+                </i>
+
+            </div>
+
+            <div class="film-perforation film-bottom"></div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             MEMORY LETTER
+        ================================================== -->
+
+        <div class="memory-letter">
+
+            <div class="memory-letter-corner">
+                ♡
+            </div>
+
+
+            <p class="memory-letter-kicker">
+                A NOTE FROM ME
+            </p>
+
+
+            <h3>
+                I hope we never
+                <span>
+                    run out of memories.
+                </span>
+            </h3>
+
+
+            <p class="memory-letter-text">
+
+                I want the random photographs.
+
+                <br>
+
+                The blurry ones.
+                The stupid ones.
+                The ones where neither of us
+                is looking at the camera.
+
+                <br><br>
+
+                Because one day,
+                those might become
+                the photographs we miss the most.
+
+            </p>
+
+
+            <p class="memory-letter-script">
+                Let's make a lot more of them.
+            </p>
+
+
+            <div class="memory-letter-sign">
+
+                <span>
+                    yours,
+                </span>
+
+                <strong>
+                    always ♡
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             ARCHIVE FOOTER
+        ================================================== -->
+
+        <div class="memory-archive-footer">
+
+            <div class="archive-stat">
+
+                <strong>
+                    08
+                </strong>
+
+                <span>
+                    little memories
+                </span>
+
+            </div>
+
+
+            <div class="archive-center-mark">
+                ♡
+            </div>
+
+
+            <div class="archive-stat">
+
+                <strong>
+                    ∞
+                </strong>
+
+                <span>
+                    more to come
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="memory-note">
+
+            <span>
+                THE ARCHIVE IS SMALL.
+                THE FEELING ISN'T.
+            </span>
+
+            <b>
+                keep the good days close ♡
+            </b>
+
+        </div>
+
+
+        <!-- =================================================
+             CONTINUE
+        ================================================== -->
+
+        <div class="memory-footer">
+
+            <span>
+                more memories
+            </span>
+
+            <i>
+                ♡
+            </i>
+
+            <span>
+                more stories
+            </span>
+
+        </div>
+
+
+        <button
+            id="memoryContinue"
+            class="text-button memory-continue"
+            type="button"
+        >
+
+            <span class="memory-continue-small">
+                there's still more
+            </span>
+
+            <strong>
+                Keep going
+            </strong>
+
+            <b>
+                ↓
+            </b>
+
+        </button>
+
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     END CHAPTER 04
+========================================================= -->
+
+
+
+<!-- =========================================================
+     07 — THINGS I DON'T SAY ENOUGH
+========================================================= -->
+
+<!-- =========================================================
+     05 — UNSAID THINGS / BIRTHDAY CONFESSION WALL
+========================================================= -->
+
+<section
+    id="thingsSection"
+    class="story-section things-section things-premium"
+>
+
+    <!-- BACKGROUND ATMOSPHERE -->
+    <div class="things-atmosphere" aria-hidden="true">
+
+        <span class="things-orb things-orb-1"></span>
+        <span class="things-orb things-orb-2"></span>
+        <span class="things-orb things-orb-3"></span>
+
+        <span class="things-heart things-heart-1">♡</span>
+        <span class="things-heart things-heart-2">♡</span>
+        <span class="things-heart things-heart-3">♡</span>
+        <span class="things-heart things-heart-4">♡</span>
+
+        <span class="things-spark things-spark-1">✦</span>
+        <span class="things-spark things-spark-2">✧</span>
+        <span class="things-spark things-spark-3">✦</span>
+
+        <span class="birthday-confetti confetti-1"></span>
+        <span class="birthday-confetti confetti-2"></span>
+        <span class="birthday-confetti confetti-3"></span>
+        <span class="birthday-confetti confetti-4"></span>
+        <span class="birthday-confetti confetti-5"></span>
+        <span class="birthday-confetti confetti-6"></span>
+
+    </div>
+
+
+    <div class="story-container things-container">
+
+
+        <!-- =====================================================
+             HEADER
+        ====================================================== -->
+
+        <header class="things-header">
+
+            <div class="things-chapter-label">
+
+                <span></span>
+
+                <p>
+                    CHAPTER 05 · UNSAID THINGS
+                </p>
+
+                <span></span>
+
+            </div>
+
+
+            <p class="things-handwritten">
+                things I should probably say more often...
+            </p>
+
+
+            <h2>
+                A few things
+                <span>
+                    I never want you to forget.
+                </span>
+            </h2>
+
+
+            <p class="section-description things-intro">
+
+                Birthdays are supposed to be about celebrating you.
+
+                <br>
+
+                So today, I'm going to be a little more honest
+                than usual.
+
+            </p>
+
+
+            <div class="things-header-heart">
+                <span></span>
+                ♡
+                <span></span>
+            </div>
+
+        </header>
+
+
+
+        <!-- =====================================================
+             BIRTHDAY NOTE
+        ====================================================== -->
+
+        <div class="birthday-note-card">
+
+            <div class="birthday-note-top">
+
+                <span>
+                    A LITTLE BIRTHDAY NOTE
+                </span>
+
+                <span>
+                    05 / 08
+                </span>
+
+            </div>
+
+
+            <div class="birthday-note-body">
+
+                <p class="birthday-note-script">
+                    Dear birthday girl...
+                </p>
+
+
+                <h3>
+                    Today is your day.
+                    <span>
+                        But somehow, I still feel lucky.
+                    </span>
+                </h3>
+
+
+                <p>
+                    Lucky that I get to know you,
+                    laugh with you,
+                    annoy you,
+                    support you,
+                    and be a small part of your story.
+                </p>
+
+            </div>
+
+
+            <div class="birthday-note-bottom">
+
+                <span>
+                    written with way too much love
+                </span>
+
+                <strong>
+                    ♡
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             CONFESSION INTRO
+        ====================================================== -->
+
+        <div class="confession-intro">
+
+            <span class="confession-line"></span>
+
+            <p>
+                THINGS I DON'T SAY ENOUGH
+            </p>
+
+            <span class="confession-line"></span>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             CONFESSION GRID
+        ====================================================== -->
+
+        <div class="things-grid">
+
+
+            <!-- 01 -->
+            <article class="thing-item thing-card-01">
+
+                <div class="thing-number">
+                    01
+                </div>
+
+
+                <div class="thing-icon">
+                    ♡
+                </div>
+
+
+                <div class="thing-content">
+
+                    <span class="thing-label">
+                        FIRST THING
+                    </span>
+
+                    <h3>
+                        Thank you.
+                    </h3>
+
+                    <p>
+                        For all the little things
+                        you probably don't even remember doing.
+                    </p>
+
+                    <span class="thing-script">
+                        I noticed them.
+                    </span>
+
+                </div>
+
+
+                <div class="thing-card-footer">
+                    <span>
+                        always noticed
+                    </span>
+
+                    <b>
+                        ✦
+                    </b>
+                </div>
+
+            </article>
+
+
+
+            <!-- 02 -->
+            <article class="thing-item thing-card-02">
+
+                <div class="thing-number">
+                    02
+                </div>
+
+
+                <div class="thing-icon">
+                    :)
+                </div>
+
+
+                <div class="thing-content">
+
+                    <span class="thing-label">
+                        BE HONEST
+                    </span>
+
+                    <h3>
+                        You're cute & annoying.
+                    </h3>
+
+                    <p>
+                        Obviously.
+
+                        <br>
+
+                        That's practically part of
+                        the job description.
+                    </p>
+
+                    <span class="thing-script">
+                        And somehow I love it.
+                    </span>
+
+                </div>
+
+
+                <div class="thing-card-footer">
+                    <span>
+                        unfortunately
+                    </span>
+
+                    <b>
+                        ♡
+                    </b>
+                </div>
+
+            </article>
+
+
+
+            <!-- 03 -->
+            <article class="thing-item thing-card-03">
+
+                <div class="thing-number">
+                    03
+                </div>
+
+
+                <div class="thing-icon">
+                    ✦
+                </div>
+
+
+                <div class="thing-content">
+
+                    <span class="thing-label">
+                        NO EXPLANATION NEEDED
+                    </span>
+
+                    <h3>
+                        You're special.
+                    </h3>
+
+                    <p>
+                        Not because you're perfect.
+
+                        <br>
+
+                        But because there is nobody
+                        quite like you.
+                    </p>
+
+                    <span class="thing-script">
+                        Please never forget that.
+                    </span>
+
+                </div>
+
+
+                <div class="thing-card-footer">
+                    <span>
+                        one of one
+                    </span>
+
+                    <b>
+                        ✧
+                    </b>
+                </div>
+
+            </article>
+
+
+
+            <!-- 04 -->
+            <article class="thing-item thing-card-04">
+
+                <div class="thing-number">
+                    04
+                </div>
+
+
+                <div class="thing-icon">
+                    ★
+                </div>
+
+
+                <div class="thing-content">
+
+                    <span class="thing-label">
+                        I'M PROUD
+                    </span>
+
+                    <h3>
+                        I'm proud of you.
+                    </h3>
+
+                    <p>
+                        Not only for what you achieve,
+                        but for the person you're becoming.
+                    </p>
+
+                    <span class="thing-script">
+                        Keep becoming you.
+                    </span>
+
+                </div>
+
+
+                <div class="thing-card-footer">
+                    <span>
+                        always cheering
+                    </span>
+
+                    <b>
+                        ♡
+                    </b>
+                </div>
+
+            </article>
+
+
+
+            <!-- 05 FEATURED -->
+            <article class="thing-item featured-thing">
+
+                <div class="featured-thing-glow"></div>
+
+
+                <div class="thing-number">
+                    05
+                </div>
+
+
+                <div class="thing-icon">
+                    ∞
+                </div>
+
+
+                <div class="thing-content">
+
+                    <span class="thing-label">
+                        THE IMPORTANT ONE
+                    </span>
+
+                    <h3>
+                        And finally...
+                    </h3>
+
+
+                    <p>
+                        Life is going to change a lot.
+                    </p>
+
+
+                    <p>
+                        People will come and go.
+                        Plans will change.
+                        Days won't always be easy.
+                    </p>
+
+
+                    <strong>
+                        But I hope one thing never does:
+                    </strong>
+
+
+                    <div class="featured-promise">
+                        You knowing
+                        <span>
+                            that you have me.
+                        </span>
+                    </div>
+
+
+                    <span class="thing-script">
+                        on the good days, bad days,
+                        and completely random days.
+                    </span>
+
+                </div>
+
+
+                <div class="featured-thing-footer">
+
+                    <span>
+                        ONE PROMISE
+                    </span>
+
+                    <b>
+                        ALWAYS ♡
+                    </b>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             BIRTHDAY WISH STRIP
+        ====================================================== -->
+
+        <div class="birthday-wish-strip">
+
+            <div class="wish-strip-side">
+                <span>✦</span>
+                <span>✦</span>
+            </div>
+
+
+            <div class="wish-strip-content">
+
+                <p>
+                    MY WISH FOR YOU
+                </p>
+
+                <h3>
+                    May this year be
+                    <span>
+                        softer, brighter & happier.
+                    </span>
+                </h3>
+
+                <div class="wish-strip-heart">
+                    ♡
+                </div>
+
+                <p class="wish-strip-small">
+                    and may you always have a reason to smile.
+                </p>
+
+            </div>
+
+
+            <div class="wish-strip-side">
+                <span>✦</span>
+                <span>✦</span>
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             MINI PROMISES
+        ====================================================== -->
+
+        <div class="mini-promises">
+
+            <div class="mini-promise">
+
+                <span>
+                    01
+                </span>
+
+                <div>
+                    <strong>
+                        I'll listen.
+                    </strong>
+
+                    <p>
+                        Even when you don't know
+                        how to explain what's wrong.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="mini-promise">
+
+                <span>
+                    02
+                </span>
+
+                <div>
+                    <strong>
+                        I'll celebrate you.
+                    </strong>
+
+                    <p>
+                        Not just today,
+                        but on ordinary days too.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="mini-promise">
+
+                <span>
+                    03
+                </span>
+
+                <div>
+                    <strong>
+                        I'll remind you.
+                    </strong>
+
+                    <p>
+                        Of how amazing you are
+                        whenever you forget.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             BIG BIRTHDAY CONFESSION
+        ====================================================== -->
+
+        <div class="big-confession">
+
+            <div class="confession-decoration confession-decoration-left">
+                ♡
+            </div>
+
+            <div class="confession-decoration confession-decoration-right">
+                ♡
+            </div>
+
+
+            <p class="big-confession-kicker">
+                ONE LAST THING
+            </p>
+
+
+            <h3>
+                If I could give you
+                <span>
+                    one thing today...
+                </span>
+            </h3>
+
+
+            <p class="big-confession-text">
+
+                I wouldn't give you something
+                that could be wrapped.
+
+                <br><br>
+
+                I'd give you the ability to see yourself
+                the way I see you.
+
+            </p>
+
+
+            <div class="big-confession-highlight">
+
+                <span>
+                    beautiful
+                </span>
+
+                <span>
+                    important
+                </span>
+
+                <span>
+                    loved
+                </span>
+
+            </div>
+
+
+            <p class="big-confession-script">
+                Because you deserve to know.
+            </p>
+
+
+            <div class="big-confession-signature">
+
+                <span>
+                    with all my heart,
+                </span>
+
+                <strong>
+                    me ♡
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             BIRTHDAY CAKE SEAL
+        ====================================================== -->
+
+        <div class="birthday-seal">
+
+            <div class="seal-ring">
+
+                <span>
+                    MADE
+                </span>
+
+                <span>
+                    JUST
+                </span>
+
+                <span>
+                    FOR
+                </span>
+
+                <span>
+                    YOU
+                </span>
+
+            </div>
+
+
+            <div class="seal-center">
+                ♡
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             FINAL NOTE
+        ====================================================== -->
+
+        <div class="things-final-note">
+
+            <span class="things-final-line"></span>
+
+
+            <p>
+                HAPPY BIRTHDAY,
+            </p>
+
+
+            <h3>
+                Shrimati Ji.
+            </h3>
+
+
+            <span class="things-final-script">
+                I hope you know how loved you are.
+            </span>
+
+
+            <span class="things-final-line"></span>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             CONTINUE
+        ====================================================== -->
+
+        <div class="things-next">
+
+            <p>
+                okay...
+                enough feelings for one chapter.
+            </p>
+
+
+            <button
+                id="thingsContinue"
+                class="primary-button things-continue"
+                type="button"
+            >
+
+                <span>
+                    there's a letter waiting for you
+                </span>
+
+                <b>
+                    →
+                </b>
+
+            </button>
+
+
+            <small>
+                and trust me...
+                you want to read this one.
+            </small>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     08 — HANDWRITTEN LETTER
+========================================================= -->
+
+<section
+    id="letterSection"
+    class="story-section letter-section relationship-letter"
+>
+
+    <div class="story-container">
+
+
+        <p class="eyebrow">
+            CHAPTER 06 · FROM THE HEART
+        </p>
+
+
+        <h2 class="letter-heading">
+            I didn't know how to say this...
+        </h2>
+
+
+        <div class="letter-paper">
+
+
+            <div class="paper-corner corner-one"></div>
+
+            <div class="paper-corner corner-two"></div>
+
+
+            <div class="letter-top">
+
+                <span>
+                    07 / 11 / 2026
+                </span>
+
+                <span>
+                    ♡
+                </span>
+
+            </div>
+
+
+            <div class="letter-content">
+
+
+                <p class="letter-dear">
+                    Dear Abhilipsa,
+                </p>
+
+
+                <p>
+                    I could have simply written
+                    <em>“Happy Birthday”</em>
+                    and called it a day.
+                </p>
+
+
+                <p>
+                    But somehow that felt too small
+                    for someone who has been a part
+                    of so many ordinary days
+                    that quietly became important memories.
+                </p>
+
+
+                <div class="letter-quote">
+                    “Some people become memories.
+                    Some people become a part of you.”
+                </div>
+
+
+                <p>
+                    I don't always say everything
+                    I feel. Sometimes I joke,
+                    sometimes I annoy you,
+                    sometimes I act like I don't care.
+                </p>
+
+
+                <p>
+                    But somewhere underneath all of that,
+                    there is a very simple truth:
+                </p>
+
+
+                <p class="letter-highlight">
+                    I genuinely want you to be happy.
+                </p>
+
+
+                <p>
+                    I want you to experience
+                    the kind of happiness that doesn't
+                    need an explanation.
+                </p>
+
+
+                <p>
+                    I want you to achieve the things
+                    you quietly dream about.
+                </p>
+
+
+                <p>
+                    I want you to meet people
+                    who appreciate your heart,
+                    not just your smile.
+                </p>
+
+
+                <p>
+                    And whenever life gets difficult,
+                    I hope you remember that you never
+                    have to figure everything out alone.
+                </p>
+
+
+                <div class="letter-quote">
+                    “You will always have a your person
+                    somewhere cheering for you.”
+                </div>
+
+
+                <p>
+                    Maybe years from now,
+                    we'll both be completely different people.
+                </p>
+
+
+                <p>
+                    We'll have different routines,
+                    different responsibilities,
+                    and probably much less time.
+                </p>
+
+
+                <p>
+                    But I hope we'll still look back
+                    at these little moments and smile.
+                </p>
+
+
+                <p>
+                    So today,
+                    on your birthday,
+                    I just want to say:
+                </p>
+
+
+                <p class="letter-big-line">
+                    I'm really glad you were born.
+                </p>
+
+
+                <p>
+                    Happy Birthday, Abhilipsa.
+                </p>
+
+
+                <p>
+                    Keep smiling.
+                    Keep dreaming.
+                    Keep being you.
+                </p>
+
+
+                <div class="letter-signature">
+
+                    With love,
+
+                    <br>
+
+                    <strong>
+                        Your person, always choosing you ♡
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="letter-bottom">
+
+                <span>
+                    written especially for you
+                </span>
+
+                <span>
+                    ♡
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <button
+            id="letterContinue"
+            class="primary-button"
+        >
+
+            One more thing...
+
+            <b>
+                →
+            </b>
+
+        </button>
+
+    </div>
+
+</section>
+<!-- =========================================================
+     09 — BIRTHDAY WISH GARDEN
+========================================================= -->
+
+<section
+    id="wishSection"
+    class="story-section wish-section"
+>
+
+    <div
+        id="wishGarden"
+        class="wish-garden"
+        aria-hidden="true"
+    ></div>
+
+
+    <div class="story-container wish-container">
+
+
+        <p class="eyebrow">
+            CHAPTER 07 · MAKE A WISH
+        </p>
+
+
+        <h2>
+            If today could give you
+            <span>
+                one thing...
+            </span>
+        </h2>
+
+
+        <p class="section-description">
+            What would you choose?
+        </p>
+
+
+        <div class="wish-options">
+
+
+            <button
+                class="wish-option"
+                data-wish="happiness"
+            >
+
+                <span>
+                    ☀
+                </span>
+
+                <strong>
+                    Happiness
+                </strong>
+
+                <small>
+                    The kind that stays.
+                </small>
+
+            </button>
+
+
+            <button
+                class="wish-option"
+                data-wish="dreams"
+            >
+
+                <span>
+                    ✦
+                </span>
+
+                <strong>
+                    Dreams
+                </strong>
+
+                <small>
+                    The courage to chase them.
+                </small>
+
+            </button>
+
+
+            <button
+                class="wish-option"
+                data-wish="peace"
+            >
+
+                <span>
+                    ☁
+                </span>
+
+                <strong>
+                    Peace
+                </strong>
+
+                <small>
+                    A quieter, softer life.
+                </small>
+
+            </button>
+
+
+            <button
+                class="wish-option"
+                data-wish="adventure"
+            >
+
+                <span>
+                    ♡
+                </span>
+
+                <strong>
+                    Adventure
+                </strong>
+
+                <small>
+                    More stories worth telling.
+                </small>
+
+            </button>
+
+
+        </div>
+
+
+        <div
+            id="wishResult"
+            class="wish-result"
+        >
+
+            <div class="wish-result-icon">
+                ✿
+            </div>
+
+            <p>
+                Your wish has been planted.
+            </p>
+
+            <strong id="wishResultText">
+                Something beautiful is growing.
+            </strong>
+
+        </div>
+
+
+        <button
+            id="wishContinue"
+            class="text-button"
+        >
+
+            Continue
+
+            <span>
+                →
+            </span>
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     10 — SECRET PUZZLE
+========================================================= -->
+
+
+<!-- =========================================================
+     CHAPTER 08 — THE BIRTHDAY SECRET
+========================================================= -->
+
+<section
+    id="puzzleSection"
+    class="story-section puzzle-section puzzle-premium"
+>
+
+    <!-- =====================================================
+         BACKGROUND
+    ====================================================== -->
+
+    <div class="puzzle-background" aria-hidden="true">
+
+        <span class="puzzle-bg-orb puzzle-bg-orb-1"></span>
+        <span class="puzzle-bg-orb puzzle-bg-orb-2"></span>
+        <span class="puzzle-bg-orb puzzle-bg-orb-3"></span>
+
+        <span class="puzzle-float puzzle-float-1">♡</span>
+        <span class="puzzle-float puzzle-float-2">✦</span>
+        <span class="puzzle-float puzzle-float-3">✧</span>
+        <span class="puzzle-float puzzle-float-4">♡</span>
+        <span class="puzzle-float puzzle-float-5">✦</span>
+
+        <span class="puzzle-star puzzle-star-1">✦</span>
+        <span class="puzzle-star puzzle-star-2">✧</span>
+        <span class="puzzle-star puzzle-star-3">✦</span>
+        <span class="puzzle-star puzzle-star-4">·</span>
+
+        <span class="secret-confetti secret-confetti-1"></span>
+        <span class="secret-confetti secret-confetti-2"></span>
+        <span class="secret-confetti secret-confetti-3"></span>
+        <span class="secret-confetti secret-confetti-4"></span>
+        <span class="secret-confetti secret-confetti-5"></span>
+        <span class="secret-confetti secret-confetti-6"></span>
+
+    </div>
+
+
+
+    <div class="story-container puzzle-container">
+
+
+        <!-- =================================================
+             SECRET HEADER
+        ================================================== -->
+
+        <header class="secret-header">
+
+            <div class="secret-chapter-label">
+
+                <span></span>
+
+                <p>
+                    CHAPTER 08 · A LITTLE SECRET
+                </p>
+
+                <span></span>
+
+            </div>
+
+
+            <p class="secret-handwritten">
+                okay... one more thing.
+            </p>
+
+
+            <h2>
+                I hid something
+                <span>
+                    just for you.
+                </span>
+            </h2>
+
+
+            <p class="secret-intro">
+                You've made it this far through your birthday story.
+
+                <br>
+
+                So obviously...
+                I couldn't let you leave without
+                one tiny adventure.
+            </p>
+
+
+            <div class="secret-header-mark">
+                <span></span>
+                ♡
+                <span></span>
+            </div>
+
+        </header>
+
+
+
+        <!-- =================================================
+             SECRET PASSPORT / CARD
+        ================================================== -->
+
+        <div class="secret-passport">
+
+            <div class="passport-top">
+
+                <span>
+                    BIRTHDAY SECRET FILE
+                </span>
+
+                <span>
+                    08 / 08
+                </span>
+
+            </div>
+
+
+            <div class="passport-main">
+
+                <div class="passport-seal">
+                    <span>FOR</span>
+                    <strong>YOU</strong>
+                    <small>♡</small>
+                </div>
+
+
+                <div class="passport-content">
+
+                    <p>
+                        CLASSIFIED
+                    </p>
+
+                    <h3>
+                        Mission:
+                        <span>
+                            Make Her Smile.
+                        </span>
+                    </h3>
+
+                    <div class="passport-details">
+
+                        <span>
+                            STATUS
+                            <b>ACTIVE</b>
+                        </span>
+
+                        <span>
+                            DIFFICULTY
+                            <b>WORTH IT</b>
+                        </span>
+
+                        <span>
+                            REWARD
+                            <b>ONE SECRET</b>
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="passport-bottom">
+
+                <span>
+                    authorized birthday person only
+                </span>
+
+                <b>
+                    ♡
+                </b>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             PUZZLE INTRO
+        ================================================== -->
+
+        <div
+            id="puzzleIntro"
+            class="puzzle-screen active"
+        >
+
+            <div class="puzzle-intro-card">
+
+                <div class="puzzle-intro-icon">
+                    <span>✦</span>
+                </div>
+
+
+                <p class="eyebrow">
+                    SECRET PUZZLE
+                </p>
+
+
+                <p class="puzzle-intro-script">
+                    here's your little mission...
+                </p>
+
+
+                <h3>
+                    Can you find
+                    <span>
+                        what I hid for you?
+                    </span>
+                </h3>
+
+
+                <p class="puzzle-intro-text">
+                    There are clues hidden inside this chapter.
+
+                    <br><br>
+
+                    A few pieces are mixed up.
+                    A few words are missing.
+                    And somewhere in all of it,
+                    there's something meant only for you.
+                </p>
+
+
+                <div class="mission-list">
+
+                    <div>
+                        <span>01</span>
+                        <p>Look carefully.</p>
+                    </div>
+
+                    <div>
+                        <span>02</span>
+                        <p>Follow the clues.</p>
+                    </div>
+
+                    <div>
+                        <span>03</span>
+                        <p>Put the pieces together.</p>
+                    </div>
+
+                    <div>
+                        <span>04</span>
+                        <p>Find the secret.</p>
+                    </div>
+
+                </div>
+
+
+                <button
+                    id="startPuzzleButton"
+                    class="primary-button secret-start-button"
+                    type="button"
+                >
+
+                    <span>
+                        Begin The Secret
+                    </span>
+
+                    <b>
+                        →
+                    </b>
+
+                </button>
+
+
+                <small>
+                    warning: the reward may contain feelings.
+                </small>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             PRE-PUZZLE WISH
+        ================================================== -->
+
+        <div class="secret-wish-card">
+
+            <div class="wish-card-icon">
+                ♡
+            </div>
+
+
+            <p>
+                BEFORE YOU START
+            </p>
+
+
+            <h3>
+                Make a little birthday wish.
+            </h3>
+
+
+            <span>
+                Don't tell me what it is.
+                Just keep it somewhere in your heart.
+            </span>
+
+        </div>
+
+
+
+        <!-- =================================================
+             PUZZLE GAME
+        ================================================== -->
+
+        <div
+            id="puzzleGame"
+            class="puzzle-screen"
+        >
+
+            <div class="puzzle-game-shell">
+
+
+                <!-- GAME HEADER -->
+
+                <div class="puzzle-header">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            SECRET PUZZLE · 01
+                        </p>
+
+                        <p class="puzzle-game-script">
+                            take your time...
+                        </p>
+
+                        <h3>
+                            Put the memories
+                            <span>
+                                back together.
+                            </span>
+                        </h3>
+
+                    </div>
+
+
+                    <div class="puzzle-moves-card">
+
+                        <small>
+                            MOVES
+                        </small>
+
+                        <strong id="puzzleMoves">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- GAME DESCRIPTION -->
+
+                <div class="puzzle-instructions">
+
+                    <div class="instruction-icon">
+                        ✦
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Your mission
+                        </strong>
+
+                        <p>
+                            Tap two pieces to swap them.
+                            Keep going until the hidden picture
+                            is complete.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PUZZLE BOARD -->
+
+                <div class="puzzle-board-wrapper">
+
+                    <div class="board-corner board-corner-tl">
+                        ✦
+                    </div>
+
+                    <div class="board-corner board-corner-tr">
+                        ♡
+                    </div>
+
+                    <div class="board-corner board-corner-bl">
+                        ♡
+                    </div>
+
+                    <div class="board-corner board-corner-br">
+                        ✦
+                    </div>
+
+
+                    <div
+                        id="puzzleBoard"
+                        class="puzzle-board"
+                    ></div>
+
+
+                    <div class="board-bottom-label">
+                        <span>
+                            PIECES OF A MEMORY
+                        </span>
+
+                        <b>
+                            ♡
+                        </b>
+                    </div>
+
+                </div>
+
+
+
+                <!-- GAME ACTIONS -->
+
+                <div class="puzzle-actions">
+
+                    <button
+                        id="puzzleHint"
+                        class="secondary-button puzzle-action-button"
+                        type="button"
+                    >
+
+                        <span class="action-icon">
+                            ✦
+                        </span>
+
+                        <span>
+                            Give Me A Hint
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        id="puzzleShuffle"
+                        class="secondary-button puzzle-action-button"
+                        type="button"
+                    >
+
+                        <span class="action-icon">
+                            ⟳
+                        </span>
+
+                        <span>
+                            Mix Again
+                        </span>
+
+                    </button>
+
+                </div>
+
+
+
+                <!-- FEEDBACK -->
+
+                <div class="puzzle-feedback-box">
+
+                    <span class="feedback-mark">
+                        ♡
+                    </span>
+
+                    <p
+                        id="puzzleFeedback"
+                        class="puzzle-feedback"
+                    ></p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             CLUE WALL
+        ================================================== -->
+
+        <div class="secret-clue-wall">
+
+            <div class="clue-wall-header">
+
+                <p>
+                    WHILE YOU'RE HERE...
+                </p>
+
+                <h3>
+                    Three little clues.
+                </h3>
+
+                <span>
+                    Maybe they'll help.
+                    Maybe they'll just make you smile.
+                </span>
+
+            </div>
+
+
+            <div class="clue-grid">
+
+                <article class="clue-card clue-card-one">
+
+                    <span class="clue-number">
+                        CLUE 01
+                    </span>
+
+                    <div class="clue-icon">
+                        ♡
+                    </div>
+
+                    <h4>
+                        Look beyond
+                        the obvious.
+                    </h4>
+
+                    <p>
+                        Sometimes the sweetest things
+                        are hidden in plain sight.
+                    </p>
+
+                </article>
+
+
+                <article class="clue-card clue-card-two">
+
+                    <span class="clue-number">
+                        CLUE 02
+                    </span>
+
+                    <div class="clue-icon">
+                        ✦
+                    </div>
+
+                    <h4>
+                        Don't rush
+                        this one.
+                    </h4>
+
+                    <p>
+                        The best memories were never
+                        meant to be experienced quickly.
+                    </p>
+
+                </article>
+
+
+                <article class="clue-card clue-card-three">
+
+                    <span class="clue-number">
+                        CLUE 03
+                    </span>
+
+                    <div class="clue-icon">
+                        ∞
+                    </div>
+
+                    <h4>
+                        The reward
+                        is worth it.
+                    </h4>
+
+                    <p>
+                        Especially because
+                        it was made with you in mind.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             BIRTHDAY WISHES
+        ================================================== -->
+
+        <div class="secret-wishes">
+
+            <div class="secret-wishes-heading">
+
+                <p>
+                    A FEW WISHES FOR YOU
+                </p>
+
+                <h3>
+                    Since you're already here...
+                    <span>
+                        let me wish you things.
+                    </span>
+                </h3>
+
+            </div>
+
+
+            <div class="secret-wish-grid">
+
+                <article>
+
+                    <span>01</span>
+
+                    <div>
+                        <strong>
+                            More reasons to laugh.
+                        </strong>
+
+                        <p>
+                            The kind of laughter that
+                            makes your stomach hurt.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article>
+
+                    <span>02</span>
+
+                    <div>
+                        <strong>
+                            More peaceful days.
+                        </strong>
+
+                        <p>
+                            Days where everything
+                            feels a little lighter.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article>
+
+                    <span>03</span>
+
+                    <div>
+                        <strong>
+                            More beautiful surprises.
+                        </strong>
+
+                        <p>
+                            The kind you never saw
+                            coming.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article>
+
+                    <span>04</span>
+
+                    <div>
+                        <strong>
+                            More dreams coming true.
+                        </strong>
+
+                        <p>
+                            Even the ones you're
+                            scared to say out loud.
+                        </p>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             SECRET REVEAL
+        ================================================== -->
+
+        <div
+            id="puzzleReveal"
+            class="puzzle-screen"
+        >
+
+            <div class="reveal-celebration">
+
+                <div class="reveal-confetti">
+
+                    <span>✦</span>
+                    <span>♡</span>
+                    <span>✧</span>
+                    <span>✦</span>
+                    <span>♡</span>
+
+                </div>
+
+
+                <div class="reveal-symbol">
+                    ♡
+                </div>
+
+
+                <p class="eyebrow">
+                    SECRET FOUND
+                </p>
+
+
+                <p class="reveal-script">
+                    you actually found it...
+                </p>
+
+
+                <h2>
+                    You found
+                    <span>
+                        the little secret.
+                    </span>
+                </h2>
+
+
+                <p class="reveal-subtitle">
+                    I knew you would.
+                </p>
+
+
+
+                <!-- PHOTO -->
+
+                <div class="reveal-photo-frame">
+
+                    <div class="reveal-photo-tape"></div>
+
+                    <div class="reveal-photo">
+
+                        <img
+                            src="assets/images/secret-memory.jpg"
+                            alt="Secret birthday memory"
+                            loading="lazy"
+                            decoding="async"
+                        >
+
+                    </div>
+
+                    <div class="reveal-photo-caption">
+                        one of my favourite little memories ♡
+                    </div>
+
+                </div>
+
+
+
+                <!-- SECRET MESSAGE -->
+
+                <div class="reveal-letter">
+
+                    <p class="reveal-letter-top">
+                        SECRET MESSAGE
+                    </p>
+
+
+                    <p class="reveal-message">
+                        The secret was never really hidden.
+                    </p>
+
+
+                    <p class="reveal-highlight">
+                        It was simply waiting for you to notice.
+                    </p>
+
+
+                    <div class="reveal-divider">
+                        <span></span>
+                        ♡
+                        <span></span>
+                    </div>
+
+
+                    <p class="reveal-letter-body">
+                        And honestly...
+                        that's how I feel about so many
+                        little things about you.
+                    </p>
+
+
+                    <p class="reveal-final-line">
+                        The more I notice,
+                        the more reasons I find
+                        to adore you.
+                    </p>
+
+                </div>
+
+
+
+                <!-- WHAT I FOUND -->
+
+                <div class="things-i-found">
+
+                    <p>
+                        WHILE MAKING THIS
+                    </p>
+
+                    <h3>
+                        I realised something.
+                    </h3>
+
+
+                    <div class="found-grid">
+
+                        <div>
+                            <span>01</span>
+                            <strong>
+                                You're easy to celebrate.
+                            </strong>
+                        </div>
+
+                        <div>
+                            <span>02</span>
+                            <strong>
+                                You're hard to describe.
+                            </strong>
+                        </div>
+
+                        <div>
+                            <span>03</span>
+                            <strong>
+                                And impossible to forget.
+                            </strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FINAL BIRTHDAY MESSAGE -->
+
+                <div class="reveal-birthday-message">
+
+                    <span class="birthday-message-top">
+                        HAPPY BIRTHDAY
+                    </span>
+
+
+                    <h3>
+                        Here's to another year
+                        <span>
+                            of being wonderfully you.
+                        </span>
+                    </h3>
+
+
+                    <p>
+                        May this year bring you
+                        everything you've been hoping for,
+                        everything you deserve,
+                        and a few beautiful surprises
+                        you never expected.
+                    </p>
+
+
+                    <strong>
+                        Keep smiling.
+                        Keep dreaming.
+                        Keep being you. ♡
+                    </strong>
+
+                </div>
+
+
+
+                <!-- CONTINUE -->
+
+                <button
+                    id="puzzleContinue"
+                    class="primary-button reveal-continue-button"
+                    type="button"
+                >
+
+                    <span>
+                        There's still more
+                    </span>
+
+                    <b>
+                        →
+                    </b>
+
+                </button>
+
+
+                <p class="reveal-bottom-note">
+                    the secret was only one part of the story...
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             SECRET FOOTER
+        ================================================== -->
+
+        <footer class="secret-footer">
+
+            <div class="secret-footer-line"></div>
+
+            <p>
+                SOME SECRETS ARE WORTH SHARING.
+            </p>
+
+            <span>
+                especially on birthdays. ♡
+            </span>
+
+            <div class="secret-footer-line"></div>
+
+        </footer>
+
+
+    </div>
+
+</section>
+
+
+
+
+<!-- =========================================================
+     11 — ONE LAST QUESTION
+========================================================= -->
+
+
+
+
+<!-- =========================================================
+     12 — BIRTHDAY CAKE
+========================================================= -->
+
+
+
+
+
+<!-- =========================================================
+     13 — BIRTHDAY NIGHT
+========================================================= -->
+<!-- =========================================================
+     CHAPTER 09 — UNDER THE SAME SKY
+     PREMIUM NIGHT CHAPTER
+     ========================================================= -->
+
+<section
+    id="nightSection"
+    class="story-section night-section night-premium"
+>
+
+    <!-- =====================================================
+         NIGHT SKY BACKGROUND
+         ===================================================== -->
+
+    <div class="night-sky" aria-hidden="true">
+
+        <!-- Existing JS-generated stars -->
+        <div id="nightStars" class="night-stars"></div>
+
+        <!-- Decorative stars -->
+        <span class="night-star extra-star star-a">✦</span>
+        <span class="night-star extra-star star-b">·</span>
+        <span class="night-star extra-star star-c">✧</span>
+        <span class="night-star extra-star star-d">✦</span>
+        <span class="night-star extra-star star-e">·</span>
+        <span class="night-star extra-star star-f">✧</span>
+        <span class="night-star extra-star star-g">✦</span>
+        <span class="night-star extra-star star-h">·</span>
+        <span class="night-star extra-star star-i">✧</span>
+
+        <!-- Shooting stars -->
+        <span class="shooting-star shooting-one"></span>
+        <span class="shooting-star shooting-two"></span>
+        <span class="shooting-star shooting-three"></span>
+
+        <!-- Clouds -->
+        <div class="night-cloud cloud-one"></div>
+        <div class="night-cloud cloud-two"></div>
+        <div class="night-cloud cloud-three"></div>
+        <div class="night-cloud cloud-four"></div>
+
+        <!-- Floating hearts -->
+        <span class="night-floating-heart heart-one">♡</span>
+        <span class="night-floating-heart heart-two">♡</span>
+        <span class="night-floating-heart heart-three">♡</span>
+        <span class="night-floating-heart heart-four">♡</span>
+        <span class="night-floating-heart heart-five">♡</span>
+
+    </div>
+
+
+    <!-- =====================================================
+         MOON SCENE
+         ===================================================== -->
+
+    <div class="night-moon-scene" aria-hidden="true">
+
+        <div class="moon-glow"></div>
+
+        <div class="moon">
+
+            <div class="moon-shadow"></div>
+
+            <span class="moon-crater crater-one"></span>
+            <span class="moon-crater crater-two"></span>
+            <span class="moon-crater crater-three"></span>
+            <span class="moon-crater crater-four"></span>
+            <span class="moon-crater crater-five"></span>
+            <span class="moon-crater crater-six"></span>
+            <span class="moon-crater crater-seven"></span>
+
+        </div>
+
+        <div class="moon-halo halo-one"></div>
+        <div class="moon-halo halo-two"></div>
+        <div class="moon-halo halo-three"></div>
+
+    </div>
+
+
+    <!-- =====================================================
+         HORIZON / SILHOUETTE
+         ===================================================== -->
+
+    <div class="night-horizon" aria-hidden="true">
+
+        <div class="night-hill hill-back"></div>
+        <div class="night-hill hill-middle"></div>
+        <div class="night-hill hill-front"></div>
+
+        <!-- House 01 -->
+        <div class="tiny-house house-one">
+            <span class="house-roof"></span>
+            <span class="house-body"></span>
+            <i class="house-window"></i>
+            <i class="house-window window-two"></i>
+        </div>
+
+        <!-- House 02 -->
+        <div class="tiny-house house-two">
+            <span class="house-roof"></span>
+            <span class="house-body"></span>
+            <i class="house-window"></i>
+        </div>
+
+        <!-- Tree silhouettes -->
+        <div class="night-tree tree-one">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="night-tree tree-two">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+         ===================================================== -->
+
+    <div class="night-content">
+
+
+        <!-- =================================================
+             CHAPTER INTRO
+             ================================================= -->
+
+        <div class="night-chapter-label">
+
+            <span></span>
+
+            <p>
+                CHAPTER 09 · UNDER THE SAME SKY
+            </p>
+
+            <span></span>
+
+        </div>
+
+
+        <p class="night-handwritten">
+            stay here for a little while...
+        </p>
+
+
+        <p class="eyebrow">
+            THE NEXT CHAPTER
+        </p>
+
+
+        <h2>
+            Another year.
+        </h2>
+
+        <h1>
+            Another chapter.
+        </h1>
+
+
+        <p class="night-main-description">
+            And somehow,
+            <br>
+            still the same beautiful you.
+        </p>
+
+
+        <!-- =================================================
+             MOONLIGHT QUOTE
+             ================================================= -->
+
+        <div class="moonlight-quote">
+
+            <span class="quote-mark">“</span>
+
+            <p>
+                Some people make a year feel longer.
+                You make life feel fuller.
+            </p>
+
+            <span class="quote-line"></span>
+
+            <small>
+                written somewhere between yesterday
+                and all the tomorrows
+            </small>
+
+        </div>
+
+
+        <!-- =================================================
+             NIGHT STATS
+             ================================================= -->
+
+        <div class="night-stats">
+
+            <div class="night-stat-card">
+                <strong>∞</strong>
+                <span>possibilities</span>
+                <small>waiting for you</small>
+            </div>
+
+            <div class="night-stat-card">
+                <strong>✦</strong>
+                <span>dreams waiting</span>
+                <small>to become real</small>
+            </div>
+
+            <div class="night-stat-card">
+                <strong>♡</strong>
+                <span>people who love you</span>
+                <small>more than you know</small>
+            </div>
+
+            <div class="night-stat-card">
+                <strong>∞</strong>
+                <span>reasons to smile</span>
+                <small>still counting</small>
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             NEW YEAR / CHAPTER CARD
+             ================================================= -->
+
+        <div class="year-card">
+
+            <div class="year-card-top">
+                <span>YOUR NEW CHAPTER</span>
+                <span>09</span>
+            </div>
+
+
+            <div class="year-card-main">
+
+                <div class="year-number">
+                    ∞
+                </div>
+
+                <div class="year-text">
+
+                    <p>
+                        THIS YEAR
+                    </p>
+
+                    <h3>
+                        I hope life is
+                        <span>gentle with you.</span>
+                    </h3>
+
+                    <p>
+                        I hope you laugh more,
+                        worry less,
+                        discover beautiful places,
+                        meet beautiful moments,
+                        and never forget how special you are.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="year-card-bottom">
+
+                <span>
+                    new memories loading...
+                </span>
+
+                <b>
+                    ♡
+                </b>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             WISHES SECTION
+             ================================================= -->
+
+        <div class="night-wishes-section">
+
+            <div class="night-section-heading">
+
+                <p>
+                    A FEW THINGS I WISH FOR YOU
+                </p>
+
+                <h3>
+                    Not just today.
+                    <span>For the whole year.</span>
+                </h3>
+
+            </div>
+
+
+            <div class="night-wishes-grid">
+
+                <!-- Wish 01 -->
+                <article class="night-wish">
+
+                    <span class="wish-number">
+                        01
+                    </span>
+
+                    <div class="wish-icon">
+                        ☾
+                    </div>
+
+                    <h4>
+                        Peace
+                    </h4>
+
+                    <p>
+                        I hope your mind gets the quiet
+                        it deserves.
+                    </p>
+
+                </article>
+
+
+                <!-- Wish 02 -->
+                <article class="night-wish">
+
+                    <span class="wish-number">
+                        02
+                    </span>
+
+                    <div class="wish-icon">
+                        ✦
+                    </div>
+
+                    <h4>
+                        Happiness
+                    </h4>
+
+                    <p>
+                        The real kind. The kind that stays
+                        even after the celebration ends.
+                    </p>
+
+                </article>
+
+
+                <!-- Wish 03 -->
+                <article class="night-wish">
+
+                    <span class="wish-number">
+                        03
+                    </span>
+
+                    <div class="wish-icon">
+                        ♡
+                    </div>
+
+                    <h4>
+                        Love
+                    </h4>
+
+                    <p>
+                        I hope you always know that
+                        you are deeply loved.
+                    </p>
+
+                </article>
+
+
+                <!-- Wish 04 -->
+                <article class="night-wish">
+
+                    <span class="wish-number">
+                        04
+                    </span>
+
+                    <div class="wish-icon">
+                        ✧
+                    </div>
+
+                    <h4>
+                        Courage
+                    </h4>
+
+                    <p>
+                        For every dream that scares you
+                        a little before it begins.
+                    </p>
+
+                </article>
+
+
+                <!-- Wish 05 -->
+                <article class="night-wish">
+
+                    <span class="wish-number">
+                        05
+                    </span>
+
+                    <div class="wish-icon">
+                        ∞
+                    </div>
+
+                    <h4>
+                        Beautiful surprises
+                    </h4>
+
+                    <p>
+                        Things better than anything
+                        you could have planned.
+                    </p>
+
+                </article>
+
+
+                <!-- Wish 06 -->
+                <article class="night-wish">
+
+                    <span class="wish-number">
+                        06
+                    </span>
+
+                    <div class="wish-icon">
+                        ✦
+                    </div>
+
+                    <h4>
+                        New memories
+                    </h4>
+
+                    <p>
+                        Moments you'll remember
+                        years from now.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             FUTURE TIMELINE
+             ================================================= -->
+
+        <div class="future-section">
+
+            <div class="future-heading">
+
+                <p>
+                    A LITTLE LOOK AHEAD
+                </p>
+
+                <h3>
+                    Here's to the
+                    <span>days we haven't lived yet.</span>
+                </h3>
+
+            </div>
+
+
+            <div class="future-timeline">
+
+                <!-- Future 01 -->
+                <div class="future-item">
+
+                    <div class="future-dot">
+                        01
+                    </div>
+
+                    <div class="future-card">
+
+                        <span>
+                            SOON
+                        </span>
+
+                        <h4>
+                            More random laughs.
+                        </h4>
+
+                        <p>
+                            The kind that start for absolutely
+                            no reason and somehow become
+                            the best part of the day.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Future 02 -->
+                <div class="future-item">
+
+                    <div class="future-dot">
+                        02
+                    </div>
+
+                    <div class="future-card">
+
+                        <span>
+                            SOMEDAY
+                        </span>
+
+                        <h4>
+                            More places.
+                        </h4>
+
+                        <p>
+                            More roads, more skies,
+                            more sunsets and more stories
+                            to bring back home.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Future 03 -->
+                <div class="future-item">
+
+                    <div class="future-dot">
+                        03
+                    </div>
+
+                    <div class="future-card">
+
+                        <span>
+                            ONE DAY
+                        </span>
+
+                        <h4>
+                            More dreams coming true.
+                        </h4>
+
+                        <p>
+                            Even the ones that currently
+                            feel a little impossible.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Future 04 -->
+                <div class="future-item">
+
+                    <div class="future-dot">
+                        ∞
+                    </div>
+
+                    <div class="future-card">
+
+                        <span>
+                            ALWAYS
+                        </span>
+
+                        <h4>
+                            More reasons to celebrate you.
+                        </h4>
+
+                        <p>
+                            Because one birthday has never
+                            felt like enough.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             NIGHT LETTER
+             ================================================= -->
+
+        <div class="night-letter">
+
+            <div class="letter-tape"></div>
+
+
+            <div class="night-letter-header">
+
+                <span>
+                    A LETTER FOR THE NIGHT
+                </span>
+
+                <b>
+                    09 / 09
+                </b>
+
+            </div>
+
+
+            <div class="night-letter-body">
+
+                <p class="letter-script">
+                    if you ever read this again...
+                </p>
+
+                <h3>
+                    remember this night.
+                </h3>
+
+                <p>
+                    Not because it was your birthday.
+                </p>
+
+                <p>
+                    But because somewhere on this night,
+                    someone sat down and tried to turn
+                    feelings into words just so you could
+                    smile for a few extra seconds.
+                </p>
+
+                <p>
+                    And if one day you forget how loved
+                    you are, come back here.
+                </p>
+
+                <p class="letter-highlight">
+                    I'll leave the light on.
+                </p>
+
+            </div>
+
+
+            <div class="night-letter-sign">
+
+                <span>
+                    with all my heart,
+                </span>
+
+                <strong>
+                    always.
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             CONSTELLATION
+             ================================================= -->
+
+        <div class="constellation-section">
+
+            <div class="constellation-stars">
+
+                <span class="constellation-point cp-1"></span>
+                <span class="constellation-point cp-2"></span>
+                <span class="constellation-point cp-3"></span>
+                <span class="constellation-point cp-4"></span>
+                <span class="constellation-point cp-5"></span>
+                <span class="constellation-point cp-6"></span>
+
+                <i class="constellation-line cl-1"></i>
+                <i class="constellation-line cl-2"></i>
+                <i class="constellation-line cl-3"></i>
+                <i class="constellation-line cl-4"></i>
+                <i class="constellation-line cl-5"></i>
+
+            </div>
+
+
+            <p>
+                IF I COULD NAME A CONSTELLATION AFTER YOU
+            </p>
+
+            <h3>
+                I'd call it
+                <span>my favourite one.</span>
+            </h3>
+
+            <small>
+                because somehow,
+                every time I look up,
+                I find another reason to think of you.
+            </small>
+
+        </div>
+
+
+        <!-- =================================================
+             MIDNIGHT PROMISES
+             ================================================= -->
+
+        <div class="midnight-promises">
+
+            <div class="midnight-heading">
+
+                <p>
+                    A FEW LITTLE PROMISES
+                </p>
+
+                <h3>
+                    For this chapter
+                    <span>and the ones after it.</span>
+                </h3>
+
+            </div>
+
+
+            <div class="promise-grid">
+
+                <div class="midnight-promise">
+
+                    <span>
+                        ♡
+                    </span>
+
+                    <p>
+                        I'll keep finding reasons
+                        to make you smile.
+                    </p>
+
+                </div>
+
+
+                <div class="midnight-promise">
+
+                    <span>
+                        ✦
+                    </span>
+
+                    <p>
+                        I'll keep celebrating
+                        every version of you.
+                    </p>
+
+                </div>
+
+
+                <div class="midnight-promise">
+
+                    <span>
+                        ☾
+                    </span>
+
+                    <p>
+                        I'll remember
+                        the little things.
+                    </p>
+
+                </div>
+
+
+                <div class="midnight-promise">
+
+                    <span>
+                        ∞
+                    </span>
+
+                    <p>
+                        I'll always be grateful
+                        for your existence.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             SKY MESSAGE
+             ================================================= -->
+
+        <div class="sky-message">
+
+            <span class="sky-message-line"></span>
+
+            <p>
+                LOOK AT THE SKY.
+            </p>
+
+            <h3>
+                Somewhere under
+                <span>this same moon...</span>
+            </h3>
+
+            <p class="sky-message-text">
+                there's a version of your future
+                waiting to surprise you.
+            </p>
+
+            <div class="sky-message-stars">
+                ✦ &nbsp; ✧ &nbsp; ♡ &nbsp; ✧ &nbsp; ✦
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             BIRTHDAY NIGHT CARD
+             ================================================= -->
+
+        <div class="birthday-night-card">
+
+            <div class="night-card-glow"></div>
+
+            <span class="night-card-small">
+                TONIGHT'S REMINDER
+            </span>
+
+            <h3>
+                You don't have to
+                <span>have everything figured out.</span>
+            </h3>
+
+            <p>
+                You're allowed to grow slowly.
+                You're allowed to change.
+                You're allowed to dream again.
+                You're allowed to become someone
+                you haven't met yet.
+            </p>
+
+            <strong>
+                Just don't stop becoming you.
+            </strong>
+
+        </div>
+
+
+        <!-- =================================================
+             FINAL NIGHT MESSAGE
+             ================================================= -->
+
+        <div class="night-final-message">
+
+            <div class="final-moon-symbol">
+                ☾
+            </div>
+
+            <p class="final-kicker">
+                BEFORE WE LEAVE THIS NIGHT
+            </p>
+
+            <h3>
+                One more thing
+                <span>I want you to remember.</span>
+            </h3>
+
+            <p class="final-text">
+
+                Your birthday isn't just about
+                another number added to your age.
+
+                <br><br>
+
+                It's proof that another year of your
+                story has been written.
+
+                <br><br>
+
+                And honestly...
+
+                <br>
+
+                I'm really glad this version of you exists.
+
+            </p>
+
+            <p class="final-script">
+                Keep going.
+                There's so much more waiting for you.
+            </p>
+
+        </div>
+
+
+        <!-- =================================================
+             FINAL STATS
+             ================================================= -->
+
+        <div class="night-bottom-stats">
+
+            <div>
+
+                <span>
+                    01
+                </span>
+
+                <strong>
+                    More laughter
+                </strong>
+
+                <small>
+                    please
+                </small>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    02
+                </span>
+
+                <strong>
+                    More memories
+                </strong>
+
+                <small>
+                    always
+                </small>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    03
+                </span>
+
+                <strong>
+                    More dreams
+                </strong>
+
+                <small>
+                    coming true
+                </small>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    04
+                </span>
+
+                <strong>
+                    More you
+                </strong>
+
+                <small>
+                    just as you are
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             CONTINUE
+             ================================================= -->
+
+        <div class="night-next">
+
+            <div class="night-next-line"></div>
+
+            <button
+                id="nightContinue"
+                class="primary-button night-continue-button"
+                type="button"
+            >
+                <span>
+                    One Last Thing
+                </span>
+
+                <b>
+                    →
+                </b>
+            </button>
+
+            <p>
+                we're almost at the end...
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- =====================================================
+         BOTTOM AMBIENT GLOW
+         ===================================================== -->
+
+    <div
+        class="night-bottom-glow"
+        aria-hidden="true"
+    ></div>
+
+</section>
+
+
+
+<!-- =========================================================
+     14 — CERTIFICATE
+========================================================= -->
+
+
+
+
+
+<!-- =========================================================
+     15 — FINAL MESSAGE
+========================================================= -->
+
+<section
+    id="finalMessageSection"
+    class="story-section final-section night-continuation-section"
+>
+
+
+    <div
+        id="finalParticles"
+        class="final-particles"
+        aria-hidden="true"
+    ></div>
+
+
+    <div class="final-message">
+
+
+        <div class="final-small">
+            BEFORE YOU LEAVE...
+        </div>
+
+
+        <div class="final-heart">
+            ♡
+        </div>
+
+
+        <p class="final-script">
+            I hope you always remember this:
+        </p>
+
+
+        <h2>
+            You are loved.
+        </h2>
+
+
+        <p class="final-text">
+            More than you probably realise.
+        </p>
+
+
+        <div class="final-divider">
+
+            <span></span>
+
+            ✦
+
+            <span></span>
+
+        </div>
+
+
+        <p class="final-letter">
+
+            I hope this year gives you
+            reasons to laugh unexpectedly,
+            people who make you feel safe,
+            dreams worth chasing,
+            and memories you'll want to keep forever.
+
+        </p>
+
+
+        <p class="final-highlight">
+
+            And whenever life feels heavy,
+            remember that you don't have
+            to carry it alone.
+
+        </p>
+
+
+        <div class="final-signature">
+
+            Happy Birthday,
+
+            <strong>
+                Abhilipsa ♡
+            </strong>
+
+        </div>
+
+
+        <button
+            id="finalContinue"
+            class="primary-button"
+        >
+
+            There's one more message
+
+            <b>
+                →
+            </b>
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     16 — GOODBYE
+========================================================= -->
+
+<section
+    id="goodbyeSection"
+    class="story-section goodbye-section"
+>
+
+
+    <div class="goodbye-stars" aria-hidden="true">
+
+        <span>✦</span>
+        <span>✧</span>
+        <span>·</span>
+        <span>✦</span>
+        <span>♡</span>
+
+    </div>
+
+
+    <div class="goodbye-content">
+
+
+        <p class="eyebrow">
+            END OF THE LITTLE STORY
+        </p>
+
+
+        <h2>
+            That's all...
+        </h2>
+
+
+        <p class="goodbye-main">
+            for now.
+        </p>
+
+
+        <div class="goodbye-note">
+
+
+            <span class="quote-mark">
+                “
+            </span>
+
+
+            <p>
+                I hope when you close this,
+                you don't just remember the website.
+            </p>
+
+
+            <p class="handwritten">
+                I hope you remember
+                how loved you are.
+            </p>
+
+
+            <span class="quote-end">
+                ”
+            </span>
+
+        </div>
+
+
+        <div class="goodbye-signature">
+
+            <span>
+                Made with love,
+            </span>
+
+            <strong>
+                Your person, always choosing you ♡
+                I love you Abhilipsa ♡
+            </strong>
+
+        </div>
+
+
+        <div class="goodbye-date">
+            07 · 11 · 2026
+        </div>
+
+
+        <button
+            id="restartButton"
+            class="restart-button"
+        >
+
+            ↻
+
+            <span>
+                Read it again
+            </span>
+
+        </button>
+
+    </div>
+
+</section>
+
+
+</main>
+<!-- =========================================================
+     MOBILE BOTTOM PROGRESS
+========================================================= -->
+
+<div
+    id="storyProgress"
+    class="story-progress"
+    aria-hidden="true"
+>
+
+    <span id="storyProgressFill"></span>
+
+</div>
+
+
+
+<!-- =========================================================
+     JS
+========================================================= -->
+
+<script
+    src="script.js"
+></script>
+
+
+</body>
+
+</html>
